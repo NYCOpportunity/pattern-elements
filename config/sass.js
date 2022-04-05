@@ -1,28 +1,50 @@
 /**
- * Config
- *
- * @type {Object}
+ * Dependencies
  */
-const sass = {
+
+// ...
+
+/**
+ * Config
+ */
+
+let sass = {
   sourceMapEmbed: true,
+  precision: 2,
   includePaths: [
-    `${process.env.PWD}/src/`,
-    `${process.env.PWD}/node_modules/`
+    './node_modules', './src'
   ]
 };
 
-/**
- * Sass Export
- *
- * @type {Array}
- */
-module.exports = [
+let modules = [
   {
-    file: `${process.env.PWD}/src/scss/default.scss`,
-    outDir: `${process.env.PWD}/dist/css/`,
-    outFile: 'default.css',
+    file: './src/scss/site-default.scss',
+    outDir: './dist/styles/',
+    outFile: 'site-default.css',
     sourceMapEmbed: sass.sourceMapEmbed,
-    includePaths: sass.includePaths,
-    devModule: true // This needs to be set if we want the module to be compiled during development
+    devModule: true
+  },
+  {
+    file: './src/utilities/tailwindcss/_tailwindcss.scss',
+    outDir: './dist/styles/',
+    outFile: 'tailwindcss.css',
+    sourceMapEmbed: sass.sourceMapEmbed,
+    devModule: true
+  },
+  {
+    file: './src/utilities/tailwindcss/_tailwindcss.scss',
+    outDir: './dist/styles/',
+    outFile: '_tailwindcss.scss',
+    sourceMapEmbed: sass.sourceMapEmbed,
+    devModule: true
   }
 ];
+
+modules = modules.map(m => {
+  m.precision = sass.precision;
+  m.includePaths = sass.includePaths;
+
+  return m;
+});
+
+module.exports = modules;

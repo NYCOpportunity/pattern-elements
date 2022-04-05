@@ -1,0 +1,46 @@
+
+// Dependencies
+@import 'config/tokens';
+
+$colors: map-get($tokens, 'colors');
+$grid: map-get($tokens, 'grid');
+$borderWidth: map-get(map-get($tokens, 'borderWidth'), 'DEFAULT');
+$borderRadius: map-get(map-get($tokens, 'borderRadius'), 'DEFAULT');
+
+// Declarations
+@mixin code() {
+  color: var(--nyco-code-secondary);
+  display: inline-block;
+
+  @include typeface('code');
+  @include type('code');
+
+  background-color: var(--nyco-code-background);
+  border-color: var(--nyco-code-border);
+  border-width: $borderWidth;
+  border-radius: $borderRadius;
+  border-style: solid;
+
+  padding: .1em .3em;
+}
+
+@mixin code-block() {
+  color: var(--nyco-code-primary);
+
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+
+  padding: $grid * 3;
+}
+
+@mixin code-inline() {
+  font-size: 85%;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+
+  border-radius: 3px;
+  border-width: 1px;
+  margin: 0;
+  display: inline;
+}

@@ -1,0 +1,31 @@
+/**
+ * Tooltips
+ */
+
+// Dependencies
+@use 'config/tooltips';
+@use 'config/colors';
+@use 'config/fonts';
+@use 'config/dimensions';
+
+// Declarations
+.tooltip {
+  font-size: $font-size-small;
+  background-color: $color-white;
+  box-shadow: map-get(map-get($tokens, 'shadows'), 'up');
+
+  z-index: 3;
+
+  max-width: 100%;
+  width: $tooltip-width;
+  padding: $grid * 2;
+
+  @media screen and (min-width: media.$screen-tablet) {
+    padding: $grid * 3;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

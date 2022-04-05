@@ -1,0 +1,181 @@
+@import 'config/tokens';
+@import 'config/fonts';
+@import 'config/cdn';
+@import 'config/buttons';
+
+$colors: map-get($tokens, 'colors');
+$statuses: map-get($tokens, 'colorStatuses');
+$combinations: map-get($tokens, 'colorCombinations');
+
+// Variables
+$navy: map-get($colors, navy);
+$navy-70t: map-get($colors, 'navy-70t');
+$navy-50t: map-get($colors, 'navy-50t');
+$navy-30t: map-get($colors, 'navy-30t');
+
+$blue: map-get($colors, blue);
+$blue-70t: map-get($colors, 'blue-70t');
+$blue-50t: map-get($colors, 'blue-50t');
+$blue-30t: map-get($colors, 'blue-30t');
+$blue-20t: map-get($colors, 'blue-20t');
+$blue-10t: map-get($colors, 'blue-10t');
+
+$red: map-get($colors, 'red');
+$red-70t: map-get($colors, 'red-70t');
+$red-50t: map-get($colors, 'red-50t');
+$red-30t: map-get($colors, 'red-30t');
+
+$grey: map-get($colors, grey);
+$grey-70t: map-get($colors, 'grey-70t');
+$grey-50t: map-get($colors, 'grey-50t');
+$grey-30t: map-get($colors, 'grey-30t');
+$grey-20t: map-get($colors, 'grey-20t');
+
+$white: map-get($colors, white);
+$white-70t: map-get($colors, 'white-70t');
+$white-50t: map-get($colors, 'white-50t');
+$white-30t: map-get($colors, 'white-30t');
+
+$marigold: map-get($colors, marigold);
+$marigold-70t: map-get($colors, 'marigold-70t');
+$marigold-50t: map-get($colors, 'marigold-50t');
+$marigold-30t: map-get($colors, 'marigold-30t');
+
+$pink: map-get($colors, pink);
+$pink-70t: map-get($colors, 'pink-70t');
+$pink-50t: map-get($colors, 'pink-50t');
+$pink-30t: map-get($colors, 'pink-30t');
+
+$base-black: map-get($colors, 'base-black');
+$base-white: map-get($colors, 'base-white');
+
+// Mixins
+@mixin combination($selector, $combination, $b, $smoothing: false) {
+  // Get the namespace for the color (not the value)
+  $color: map-get($combination, 'color');
+  $color-alt: map-get($combination, 'color-alt');
+  $headings: map-get($combination, 'headings');
+  $background: map-get($combination, 'background-color');
+
+  $hyperlinks: map-get($combination, 'hyperlinks');
+  $visited: map-get($combination, 'visited');
+  $hover: map-get($combination, 'hover');
+
+  $input-border: map-get($combination, 'border');
+  $input-placeholder: map-get($combination, 'placeholder');
+  $input-background: map-get($combination, 'input-background');
+  $focus: map-get($combination, 'focus');
+
+  $box-shadow: map-get($combination, 'box-shadow');
+  $error: map-get($combination, 'error');
+
+  $button-text: map-get($combination, 'button-text');
+  $button-disabled: map-get($combination, 'button-disabled');
+  $primary: map-get($combination, 'primary');
+  $secondary: map-get($combination, 'secondary');
+
+  $code-primary: map-get($combination, 'code-primary');
+  $code-secondary: map-get($combination, 'code-secondary');
+  $code-background: map-get($combination, 'code-background');
+  $code-border: map-get($combination, 'code-border');
+
+  --nyco-color: #{map-get($colors, $color)};
+  --nyco-color-alt: #{map-get($colors, $color-alt)};
+  --nyco-font-smooth: #{$smoothing};
+  --nyco-font-weight: #{map-get($combination, 'font-weight')};
+  --nyco-headings: #{map-get($colors, $headings)};
+  --nyco-hyperlinks: #{map-get($colors, $hyperlinks)};
+  --nyco-visited: #{map-get($colors, $visited)};
+  --nyco-hover: #{map-get($colors, $hover)};
+  --nyco-background-color: #{map-get($colors, $background)};
+  --nyco-border: #{map-get($colors, $input-border)};
+  --nyco-input-background: #{map-get($colors, $input-background)};
+  --nyco-placeholder: #{map-get($colors, $input-placeholder)};
+  --nyco-focus: #{map-get($colors, $focus)};
+  --nyco-error: #{map-get($colors, $error)};
+  --nyco-box-shadow-color: #{map-get($colors, $box-shadow)};
+  --nyco-button-text: #{map-get($colors, $button-text)};
+  --nyco-button-disabled: #{map-get($colors, $button-disabled)};
+  --nyco-primary: #{map-get($colors, $primary)};
+  --nyco-secondary: #{map-get($colors, $secondary)};
+
+  --nyco-code-primary: #{map-get($colors, $code-primary)};
+  --nyco-code-secondary: #{map-get($colors, $code-secondary)};
+  --nyco-code-background: #{map-get($colors, $code-background)};
+  --nyco-code-border: #{map-get($colors, $code-border)};
+
+  --nyco-card-background-color: #{map-get($colors, 'blue-10t')};
+  --nyco-record_hero-background-color: #{map-get($colors, 'blue-20t')};
+
+  /**
+   * Base Colors
+   */
+
+  color: var(--nyco-color);
+  background-color: var(--nyco-background-color);
+
+  @if map-get($combination, 'font-weight') {
+    font-weight: var(--nyco-font-weight);
+  }
+
+  @if $smoothing {
+    @include font-smooth;
+  }
+
+  /**
+   * Focus State
+   */
+
+  .input > input:focus,
+  .select > select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0),
+                0 0 0 4px rgba(255, 255, 255, 0);
+  }
+
+  .input > input:focus,
+  .select > select:focus {
+    border-color: var(--nyco-focus);
+    box-shadow: 0 0 0 2px var(--nyco-focus);
+  }
+
+  .btn:focus, button:focus, a:focus {
+    outline: none;
+    box-shadow: 0 0 0 1.25px var(--nyco-background-color),
+                0 0 0 4px var(--nyco-focus);
+  }
+
+  /**
+   * Error State
+   */
+
+  .c-question__container.error input,
+  .c-question__container.error select,
+  .c-question__container.error .option__base,
+  .c-question__container.error .error-message {
+    border-color: var(--nyco-error);
+    color: var(--nyco-error);
+  }
+
+  .c-question__required {
+    color: var(--nyco-error);
+  }
+
+  .error::after {
+    color: var(--nyco-error);
+  }
+
+  /**
+   * Buttons
+   */
+
+  .btn-primary,
+  .color-primary-button {
+    @include button-color('primary');
+  }
+
+  .btn-secondary,
+  .color-secondary-button {
+    @include button-color('secondary');
+  }
+}

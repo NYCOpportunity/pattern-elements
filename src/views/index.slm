@@ -1,0 +1,8 @@
+= extend('/slm/layouts/default')
+
+- title = 'Pattern Elements'
+
+= content('main')
+  == this.include('../readme.md')
+
+= content('scripts')

@@ -1,0 +1,26 @@
+
+// Dependencies
+@import 'config/tokens';
+
+// Declarations
+
+// Variables
+$desktop: #{map-get(map-get($tokens, 'screen'), 'desktop')}px;
+$tablet: #{map-get(map-get($tokens, 'screen'), 'tablet')}px;
+$mobile: #{map-get(map-get($tokens, 'screen'), 'mobile')}px;
+$small: #{map-get(map-get($tokens, 'screen'), 'small')}px;
+
+// Mixins
+@mixin screens($screens: map-get($tokens, 'screen')) {
+  $variant: '' !global; // !global allows us to "pass" $variant to the @content
+
+  @content; // mobile first... then other breakpoints
+
+  @each $screen, $s in $screens {
+    @media (min-width: #{$s}px) {
+      $variant: $screen + '\\:' !global;
+      @content;
+    }
+  }
+  $variant: '' !global;
+}

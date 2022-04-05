@@ -1,0 +1,58 @@
+@import 'config/tokens';
+@import 'config/fonts';
+@import 'config/colors';
+@import 'config/code';
+
+$grid: map-get($tokens, 'grid');
+
+@mixin tables-cell {
+  padding: ($grid * 2) ($grid * 3);
+}
+
+@mixin tables-base {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  thead {
+    tr {
+      background-color: map-get($colors, 'white-50t');
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: map-get($colors, 'base-white');
+      }
+
+      &:nth-child(even) {
+        background-color: map-get($colors, 'white-50t');
+      }
+    }
+  }
+
+  th {
+    vertical-align: top;
+  }
+
+  th, td, caption {
+    @include tables-cell;
+  }
+
+  caption {
+    font-size: map-get($font-sizes, 'small');
+    font-style: italic;
+    background-color: map-get($colors, white);
+    padding: ($grid * 1) ($grid * 3);
+  }
+
+  // code style override
+  code, pre {
+    @include code-inline
+  }
+
+  pre {
+    @include code-block
+  }
+}
