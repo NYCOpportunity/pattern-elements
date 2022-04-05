@@ -386,8 +386,7 @@ module.exports = {
   'output': `"${process.env.PWD}/src/config/_tokens.scss"`,
   'stringKeys': 'stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code',
   'version': package.version,
-  'cdn': `"https://cdn.jsdelivr.net/gh/cityofnewyork/nyco-wnyc-patterns@v${package.version}/dist/"`,
-  'googleFonts': '"https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,800,800i%7CMontserrat:400,400i,700"',
+  'cdn': `"https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v${package.version}/dist/"`,
   'language': [
     'default',
     'ar',

@@ -11,7 +11,12 @@
     "default": "cross-env NODE_ENV=production pttrn"
   },
   "devDependencies": {
+    "@hail2u/css-mqpacker": "^9.0.1",
     "@nycopportunity/pttrn": "^1.4.5",
-    "@nycopportunity/pttrn-plugin-properties": "^1.1.1"
+    "@nycopportunity/pttrn-plugin-properties": "^1.1.1",
+    "cssnano": "^5.0.10",
+    "deepmerge": "^4.2.2",
+    "postcss": "^8.3.11",
+    "tailwindcss-logical": "^3.0.0"
   }
 }

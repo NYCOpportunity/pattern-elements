@@ -23,20 +23,6 @@ let modules = [
     outFile: 'site-default.css',
     sourceMapEmbed: sass.sourceMapEmbed,
     devModule: true
-  },
-  {
-    file: './src/utilities/tailwindcss/_tailwindcss.scss',
-    outDir: './dist/styles/',
-    outFile: 'tailwindcss.css',
-    sourceMapEmbed: sass.sourceMapEmbed,
-    devModule: true
-  },
-  {
-    file: './src/utilities/tailwindcss/_tailwindcss.scss',
-    outDir: './dist/styles/',
-    outFile: '_tailwindcss.scss',
-    sourceMapEmbed: sass.sourceMapEmbed,
-    devModule: true
   }
 ];
 

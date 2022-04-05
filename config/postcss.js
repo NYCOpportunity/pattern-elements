@@ -2,7 +2,6 @@
  * Dependencies
  */
 
-const tailwindcss = require('tailwindcss');       // Utility framework/management
 const autoprefixer = require('autoprefixer');     // Adds vendor spec prefixes
 const mqpacker = require('@hail2u/css-mqpacker'); // Packs media queries together
 const cssnano = require('cssnano');               // CSS optimization
@@ -24,7 +23,6 @@ module.exports = {
    * @type {Array}
    */
   plugins: [
-    tailwindcss(require('./tailwindcss.js')),
     autoprefixer('last 4 version'),
     mqpacker({sort: true}),
     cssnano({
