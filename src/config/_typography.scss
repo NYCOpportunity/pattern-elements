@@ -34,10 +34,10 @@ $line-height: map-get($tokens, 'lineHeight');
  * @return  {String}        The font family value
  */
 @function get-font-family($key: 'body') {
-  $font-family-key: '--wnyc-fontFamily-#{$key}-#{language.$language}';
+  $font-family-key: '--nyco-fontFamily-#{$key}-#{language.$language}';
 
   @if language.$language == '' {
-    $font-family-key: '--wnyc-fontFamily-#{$key}';
+    $font-family-key: '--nyco-fontFamily-#{$key}';
   }
 
   @return var(#{$font-family-key});

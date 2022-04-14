@@ -38,11 +38,11 @@ $sizes: map-get($tokens, 'iconSize');
   }
 
   > [class*='icon']:first-child {
-    margin-inline-end: calc(var(--wnyc-grid) * 0.75);
+    margin-inline-end: calc(var(--nyco-grid) * 0.75);
   }
 
   > [class*='icon']:last-child {
-    margin-inline-start: calc(var(--wnyc-grid) * 0.75);
+    margin-inline-start: calc(var(--nyco-grid) * 0.75);
   }
 }
 
@@ -73,10 +73,10 @@ $sizes: map-get($tokens, 'iconSize');
     border-radius: 9999px;
     display: inline-flex;
 
-    width: var(--wnyc-spacing-DEFAULT);
-    height: var(--wnyc-spacing-DEFAULT);
-    min-width: var(--wnyc-spacing-DEFAULT);
-    min-height: var(--wnyc-spacing-DEFAULT);
+    width: var(--nyco-spacing-DEFAULT);
+    height: var(--nyco-spacing-DEFAULT);
+    min-width: var(--nyco-spacing-DEFAULT);
+    min-height: var(--nyco-spacing-DEFAULT);
 
     flex-shrink: 0;
     align-items: center;

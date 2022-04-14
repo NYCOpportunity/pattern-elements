@@ -7,20 +7,20 @@
 
 // Declarations
 @mixin base() {
-  color: var(--wnyc-link);
-  font-weight: var(--wnyc-fontWeight-link);
+  color: var(--nyco-link);
+  font-weight: var(--nyco-fontWeight-link);
   text-decoration: underline;
 
   // &[href^='#']:visited {
-  //   color: var(--wnyc-link);
+  //   color: var(--nyco-link);
   // }
 }
 
 @mixin hover() {
-  color: var(--wnyc-link-hover);
-  // color: var(--wnyc-link-hover) !important;
+  color: var(--nyco-link-hover);
+  // color: var(--nyco-link-hover) !important;
 
   // &[href^='#']:visited {
-  //   color: var(--wnyc-link-hover);
+  //   color: var(--nyco-link-hover);
   // }
 }

@@ -31,8 +31,8 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 }
 
 @mixin grid-gap($gaps: (1, 1)) {
-  row-gap: calc(var(--wnyc-spacing-DEFAULT) * #{list.nth($gaps, 1)}); // x
-  column-gap: calc(var(--wnyc-spacing-DEFAULT) * #{list.nth($gaps, 2)}); // y
+  row-gap: calc(var(--nyco-spacing-DEFAULT) * #{list.nth($gaps, 1)}); // x
+  column-gap: calc(var(--nyco-spacing-DEFAULT) * #{list.nth($gaps, 2)}); // y
 }
 
 @mixin grid-template-columns($repeat) {
@@ -51,28 +51,28 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 // Wrap
 
 @mixin wrap() {
-  padding-inline-start: var(--wnyc-spacing-2);
-  padding-inline-end: var(--wnyc-spacing-2);
+  padding-inline-start: var(--nyco-spacing-2);
+  padding-inline-end: var(--nyco-spacing-2);
 
   @include media.screen-and-min-width('tablet') {
-    padding-inline-start: var(--wnyc-spacing-DEFAULT);
-    padding-inline-end: var(--wnyc-spacing-DEFAULT);
+    padding-inline-start: var(--nyco-spacing-DEFAULT);
+    padding-inline-end: var(--nyco-spacing-DEFAULT);
   }
 }
 
 @mixin wrap-end() {
-  padding-inline-end: var(--wnyc-spacing-2);
+  padding-inline-end: var(--nyco-spacing-2);
 
   @include media.screen-and-min-width('tablet') {
-    padding-inline-end: var(--wnyc-spacing-DEFAULT);
+    padding-inline-end: var(--nyco-spacing-DEFAULT);
   }
 }
 
 @mixin wrap-start() {
-  padding-inline-start: var(--wnyc-spacing-2);
+  padding-inline-start: var(--nyco-spacing-2);
 
   @include media.screen-and-min-width('tablet') {
-    padding-inline-start: var(--wnyc-spacing-DEFAULT);
+    padding-inline-start: var(--nyco-spacing-DEFAULT);
   }
 }
 
@@ -81,8 +81,8 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 @mixin page-min-max() {
   @include auto();
 
-  max-width: var(--wnyc-dimension-site-max-width);
-  min-width: var(--wnyc-dimension-site-min-width);
+  max-width: var(--nyco-dimension-site-max-width);
+  min-width: var(--nyco-dimension-site-min-width);
 }
 
 @mixin page-min-max-selector($variant: '') {
@@ -94,7 +94,7 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 @mixin page-min() {
   @include auto();
 
-  min-width: var(--wnyc-dimension-site-min-width);
+  min-width: var(--nyco-dimension-site-min-width);
 }
 
 @mixin page-min-selector($variant: '') {
@@ -106,7 +106,7 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 @mixin page-max() {
   @include auto();
 
-  max-width: var(--wnyc-dimension-site-max-width);
+  max-width: var(--nyco-dimension-site-max-width);
 }
 @mixin page-max-selector($variant: '') {
   .#{$variant}page-max {
@@ -200,16 +200,16 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 
   > *:first-child,
   > .layout__column:first-child {
-    width: var(--wnyc-dimension-side-bar-width);
-    max-width: var(--wnyc-dimension-side-bar-width);
-    flex-basis: var(--wnyc-dimension-side-bar-width)
+    width: var(--nyco-dimension-side-bar-width);
+    max-width: var(--nyco-dimension-side-bar-width);
+    flex-basis: var(--nyco-dimension-side-bar-width)
   }
 
   > *:first-child + *,
   > .layout__column:first-child + .layout__column {
-    width: calc(100% - #{var(--wnyc-dimension-side-bar-width)});
-    max-width: calc(100% - #{var(--wnyc-dimension-side-bar-width)});
-    flex-basis: calc(100% - #{var(--wnyc-dimension-side-bar-width)})
+    width: calc(100% - #{var(--nyco-dimension-side-bar-width)});
+    max-width: calc(100% - #{var(--nyco-dimension-side-bar-width)});
+    flex-basis: calc(100% - #{var(--nyco-dimension-side-bar-width)})
   }
 }
 
@@ -225,16 +225,16 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 
   > *:first-child,
   > .layout__column:first-child {
-    width: var(--wnyc-dimension-side-bar-width-small);
-    max-width: var(--wnyc-dimension-side-bar-width-small);
-    flex-basis: var(--wnyc-dimension-side-bar-width-small)
+    width: var(--nyco-dimension-side-bar-width-small);
+    max-width: var(--nyco-dimension-side-bar-width-small);
+    flex-basis: var(--nyco-dimension-side-bar-width-small)
   }
 
   > *:first-child + *,
   > .layout__column:first-child + .layout__column {
-    width: calc(100% - #{var(--wnyc-dimension-side-bar-width-small)});
-    max-width: calc(100% - #{var(--wnyc-dimension-side-bar-width-small)});
-    flex-basis: calc(100% - #{var(--wnyc-dimension-side-bar-width-small)})
+    width: calc(100% - #{var(--nyco-dimension-side-bar-width-small)});
+    max-width: calc(100% - #{var(--nyco-dimension-side-bar-width-small)});
+    flex-basis: calc(100% - #{var(--nyco-dimension-side-bar-width-small)})
   }
 }
 
@@ -250,17 +250,17 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 
   > *:first-child,
   > .layout__column:first-child {
-    width: var(--wnyc-dimension-side-bar-width);
-    max-width: var(--wnyc-dimension-side-bar-width);
-    flex-basis: var(--wnyc-dimension-side-bar-width);
-    margin-inline-end: var(--wnyc-spacing-DEFAULT);
+    width: var(--nyco-dimension-side-bar-width);
+    max-width: var(--nyco-dimension-side-bar-width);
+    flex-basis: var(--nyco-dimension-side-bar-width);
+    margin-inline-end: var(--nyco-spacing-DEFAULT);
   }
 
   > *:first-child + *,
   > .layout__column:first-child + .layout__column {
-    width: calc(100% - #{var(--wnyc-dimension-side-bar-width)} - var(--wnyc-spacing-DEFAULT));
-    max-width: calc(100% - #{var(--wnyc-dimension-side-bar-width)} - var(--wnyc-spacing-DEFAULT));
-    flex-basis: calc(100% - #{var(--wnyc-dimension-side-bar-width)} - var(--wnyc-spacing-DEFAULT))
+    width: calc(100% - #{var(--nyco-dimension-side-bar-width)} - var(--nyco-spacing-DEFAULT));
+    max-width: calc(100% - #{var(--nyco-dimension-side-bar-width)} - var(--nyco-spacing-DEFAULT));
+    flex-basis: calc(100% - #{var(--nyco-dimension-side-bar-width)} - var(--nyco-spacing-DEFAULT))
   }
 }
 
@@ -276,17 +276,17 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 
   > *:first-child,
   > .layout__column:first-child {
-    width: var(--wnyc-dimension-side-bar-width-small);
-    max-width: var(--wnyc-dimension-side-bar-width-small);
-    flex-basis: var(--wnyc-dimension-side-bar-width-small);
-    margin-inline-end: var(--wnyc-spacing-DEFAULT);
+    width: var(--nyco-dimension-side-bar-width-small);
+    max-width: var(--nyco-dimension-side-bar-width-small);
+    flex-basis: var(--nyco-dimension-side-bar-width-small);
+    margin-inline-end: var(--nyco-spacing-DEFAULT);
   }
 
   > *:first-child + *,
   > .layout__column:first-child + .layout__column {
-    width: calc(100% - #{var(--wnyc-dimension-side-bar-width-small)} - var(--wnyc-spacing-DEFAULT));
-    max-width: calc(100% - #{var(--wnyc-dimension-side-bar-width-small)} - var(--wnyc-spacing-DEFAULT));
-    flex-basis: calc(100% - #{var(--wnyc-dimension-side-bar-width-small)} - var(--wnyc-spacing-DEFAULT))
+    width: calc(100% - #{var(--nyco-dimension-side-bar-width-small)} - var(--nyco-spacing-DEFAULT));
+    max-width: calc(100% - #{var(--nyco-dimension-side-bar-width-small)} - var(--nyco-spacing-DEFAULT));
+    flex-basis: calc(100% - #{var(--nyco-dimension-side-bar-width-small)} - var(--nyco-spacing-DEFAULT))
   }
 }
 
@@ -303,7 +303,7 @@ $layouts: map-get(tokens.$tokens, 'layouts');
   > .layout__column:first-child {
     @include auto();
 
-    max-width: var(--wnyc-dimension-content-width)
+    max-width: var(--nyco-dimension-content-width)
   }
 }
 
@@ -316,14 +316,14 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 @mixin topbar-selector($variant: '') {
   .#{$variant}layout-topbar {
     > *:first-child {
-      height: var(--wnyc-dimension-topbar-height)
+      height: var(--nyco-dimension-topbar-height)
     }
   }
 
   .#{$variant}layout-topbar {
     > *:first-child + * {
       position: relative;
-      height: calc(100vh - var(--wnyc-dimension-topbar-height));
+      height: calc(100vh - var(--nyco-dimension-topbar-height));
       overflow: hidden
     }
   }

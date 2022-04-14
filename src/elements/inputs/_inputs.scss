@@ -25,9 +25,9 @@ input[type='number'] {
 }
 
 .input, .textarea {
-  color: var(--wnyc-input-text);
-  background: var(--wnyc-input-background);
-  border-color: var(--wnyc-input-border);
+  color: var(--nyco-input-text);
+  background: var(--nyco-input-background);
+  border-color: var(--nyco-input-border);
 }
 
 // .input-currency-usd {
@@ -85,13 +85,13 @@ input[type='number'] {
   input {
     text-overflow: ellipsis;
     display: block;
-    padding: var(--wnyc-spacing-DEFAULT);
+    padding: var(--nyco-spacing-DEFAULT);
     width: 100%;
   }
 }
 
 .input-search__submit {
-  inset-inline-end: calc(var(--wnyc-grid) * 3);
+  inset-inline-end: calc(var(--nyco-grid) * 3);
   padding: 0 !important;
   position: absolute;
 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="svg/pttrn-a-perfect-heart-red.svg" rel="icon" type="image/svg+xml" />
+  <title>@nycopportunity/pattern-elements</title>
+  <link href="css/default.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(event) {
+      hljs.configure({
+        languages: ['html', 'javascript', 'css', 'sass']
+      });
+      document.querySelectorAll('pre').forEach(function(pre) {
+        pre.setAttribute('tabindex', '0');
+        hljs.highlightBlock(pre);
+      });
+    });
+  </script>
+</head>
+
+<body class="bc-blue p-4">
+  <header class="ta-center c-white p-4">
+    <h1>Welcome to
+      <br />@nycopportunity/pattern-elements v0.0.0-1
+    </h1>
+    <p>Shared elements for the NYC Opportunity UI Patterns Framework.. Here's a sample component.</p>
+    <br />
+  </header>
+  <main>
+    <h1 id="pattern-elements-wip">Pattern Elements (WIP)</h1>
+    <p>Shared elements for the NYC Opportunity UI Patterns Framework. Currently a work–in-progress. Refer to <a href="https://www.figma.com/file/jpvfMN4UETOvjQG9EJoH4n/Patterns-Architecture?node-id=0%3A1">architecture diagram for roadmap and planning</a>.</p>
+  </main>
+  <footer class="ta-center p-4 c-white">
+    <p>Last updated April 14, 2022</p>
+    <a href="https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg">
+      <svg class="c-red" height="80" width="80">
+        <title id="svg-a-perfect-heart">A perfect SVG heart</title>
+        <use xlink:href="#pttrn-a-perfect-heart"></use>
+      </svg>
+    </a>
+  </footer>
+  <script src="js/default.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/CityOfNewYork/nyco-patterns-framework@v1.0.0-15/dist/utilities/icons/icons.iffe.js"></script>
+  <script type="text/javascript">
+    var MyPatterns = new Default();
+    new Icons('svg/svgs.svg');
+  </script>
+  <script src="/reload/reload.js"></script>
+</body>
+
+</html>

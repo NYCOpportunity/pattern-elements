@@ -8,19 +8,19 @@
 
 // Declarations
 @mixin base() {
-  color: var(--wnyc-option-text);
-  background-color: var(--wnyc-option-background);
+  color: var(--nyco-option-text);
+  background-color: var(--nyco-option-background);
 
   @include typography.set('option');
 
-  line-height: var(--wnyc-option-inner-size);
+  line-height: var(--nyco-option-inner-size);
   text-decoration: none;
 
   display: flex;
-  padding: calc(calc(var(--wnyc-grid) * 2) - var(--wnyc-option-border-width));
-  border: var(--wnyc-option-border-width) var(--wnyc-option-border-style);
+  padding: calc(calc(var(--nyco-grid) * 2) - var(--nyco-option-border-width));
+  border: var(--nyco-option-border-width) var(--nyco-option-border-style);
   border-color: transparent;
-  border-radius: var(--wnyc-option-radius);
+  border-radius: var(--nyco-option-radius);
 
   cursor: pointer;
 
@@ -28,22 +28,22 @@
 }
 
 @mixin hover() {
-  color: var(--wnyc-option-text-hover);
-  border-color: var(--wnyc-option-border-hover);
-  background-color: var(--wnyc-option-background-hover)
+  color: var(--nyco-option-text-hover);
+  border-color: var(--nyco-option-border-hover);
+  background-color: var(--nyco-option-background-hover)
 }
 
 @mixin graphic() {
   fill: transparent;
   stroke: transparent;
 
-  stroke-width: var(--wnyc-option-stroke-width);
-  stroke-linecap: var(--wnyc-select-stroke-line);
-  stroke-linejoin: var(--wnyc-select-stroke-line);
+  stroke-width: var(--nyco-option-stroke-width);
+  stroke-linecap: var(--nyco-select-stroke-line);
+  stroke-linejoin: var(--nyco-select-stroke-line);
 
-  width: var(--wnyc-option-inner-size);
-  height: var(--wnyc-option-inner-size);
-  margin-inline-end: var(--wnyc-grid);
+  width: var(--nyco-option-inner-size);
+  height: var(--nyco-option-inner-size);
+  margin-inline-end: var(--nyco-grid);
 }
 
 @mixin focused() {
@@ -51,8 +51,8 @@
 }
 
 @mixin checked() {
-  color: var(--wnyc-option-text-checked);
-  background-color: var(--wnyc-option-background-checked);
+  color: var(--nyco-option-text-checked);
+  background-color: var(--nyco-option-background-checked);
 }
 
 @mixin graphic-checked() {
@@ -64,9 +64,9 @@
 }
 
 @mixin checkbox-graphic() {
-  stroke: var(--wnyc-option-graphic-checkbox);
+  stroke: var(--nyco-option-graphic-checkbox);
 }
 
 @mixin checkbox-graphic-checked() {
-  stroke: var(--wnyc-option-graphic-checkbox-checked);
+  stroke: var(--nyco-option-graphic-checkbox-checked);
 }

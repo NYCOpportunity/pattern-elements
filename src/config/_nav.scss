@@ -73,18 +73,18 @@
     padding-left: 0;
     padding-right: 0;
 
-    padding-top: calc(var(--wnyc-grid) * 2);
-    padding-bottom: calc(var(--wnyc-grid) * 2);
+    padding-top: calc(var(--nyco-grid) * 2);
+    padding-bottom: calc(var(--nyco-grid) * 2);
 
     @include media.screen-and-max-width('small') {
-      padding-top: var(--wnyc-grid);
-      padding-bottom: var(--wnyc-grid);
+      padding-top: var(--nyco-grid);
+      padding-bottom: var(--nyco-grid);
     }
   }
 
   button, .btn {
     display: flex;
-    margin-bottom: calc(var(--wnyc-grid) * 2);
+    margin-bottom: calc(var(--nyco-grid) * 2);
     width: 100%;
 
     &:last-child {

@@ -12,7 +12,7 @@
 
 // Declarations
 @function get($token) {
-  @return #{var(--wnyc-button-#{$token})};
+  @return #{var(--nyco-button-#{$token})};
 }
 
 @mixin reset() {
@@ -26,7 +26,7 @@
   overflow: visible;
 
   &:disabled {
-    color: var(--wnyc-button-disabled-text);
+    color: var(--nyco-button-disabled-text);
     opacity: 0.8;
   }
 
@@ -46,7 +46,7 @@
 @mixin normal() {
   @include typography.set('button');
 
-  padding: calc(calc(var(--wnyc-grid) * 2) - get('border-width')) calc(var(--wnyc-spacing-DEFAULT) - get('border-width'));
+  padding: calc(calc(var(--nyco-grid) * 2) - get('border-width')) calc(var(--nyco-spacing-DEFAULT) - get('border-width'));
   line-height: get('inner-size');
 
   * {
@@ -124,8 +124,8 @@
 }
 
 @mixin tag() {
-  font-size: var(--wnyc-fontSize-small);
-  padding: var(--wnyc-grid) calc(var(--wnyc-grid) * 2);
+  font-size: var(--nyco-fontSize-small);
+  padding: var(--nyco-grid) calc(var(--nyco-grid) * 2);
   border-radius: get('radius-tag');
 }
 
@@ -138,7 +138,7 @@
 
   > [class*='icon'] {
     @include media.screens-and-prefers-motion {
-      transition: transform var(--wnyc-animate-duration)
+      transition: transform var(--nyco-animate-duration)
     }
   }
 
@@ -150,27 +150,27 @@
 }
 
 @mixin small() {
-  font-size: var(--wnyc-fontSize-small);
-  padding: calc(var(--wnyc-grid) / 2) var(--wnyc-grid);
+  font-size: var(--nyco-fontSize-small);
+  padding: calc(var(--nyco-grid) / 2) var(--nyco-grid);
 }
 
 @mixin color($type) {
-  color: var(--wnyc-button-#{$type}-text);
-  background-color: var(--wnyc-button-#{$type}-background);
+  color: var(--nyco-button-#{$type}-text);
+  background-color: var(--nyco-button-#{$type}-background);
   border-color: transparent;
 
   &:visited {
-    color: var(--wnyc-button-#{$type}-text);
-    background-color: var(--wnyc-button-#{$type}-background);
+    color: var(--nyco-button-#{$type}-text);
+    background-color: var(--nyco-button-#{$type}-background);
   }
 
   &:hover:not([disabled]),
   &:active:not([disabled]) {
-    color: var(--wnyc-button-#{$type}-text-hover);
-    background-color: var(--wnyc-button-#{$type}-background-hover);
+    color: var(--nyco-button-#{$type}-text-hover);
+    background-color: var(--nyco-button-#{$type}-background-hover);
   }
 
   &:disabled {
-    background-color: var(--wnyc-button-disabled-background);
+    background-color: var(--nyco-button-disabled-background);
   }
 }

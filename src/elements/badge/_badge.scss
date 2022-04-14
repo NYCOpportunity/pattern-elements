@@ -7,21 +7,21 @@
 
 // Declarations
 .badge {
-  font-size: var(--wnyc-badge-font-size);
-  font-weight: var(--wnyc-badge-font-weight);
-  line-height: var(--wnyc-badge-line-height);
-  text-transform: var(--wnyc-badge-text-transform);
+  font-size: var(--nyco-badge-font-size);
+  font-weight: var(--nyco-badge-font-weight);
+  line-height: var(--nyco-badge-line-height);
+  text-transform: var(--nyco-badge-text-transform);
 
-  color: var(--wnyc-badge-color);
-  background-color: var(--wnyc-badge-background);
+  color: var(--nyco-badge-color);
+  background-color: var(--nyco-badge-background);
 
-  border-radius: var(--wnyc-badge-radius);
+  border-radius: var(--nyco-badge-radius);
   display: inline-block;
 
-  padding: var(--wnyc-badge-padding);
+  padding: var(--nyco-badge-padding);
 }
 
 .badge-small {
-  line-height: var(--wnyc-badge-small-line-height);
-  padding: var(--wnyc-badge-small-padding);
+  line-height: var(--nyco-badge-small-line-height);
+  padding: var(--nyco-badge-small-padding);
 }

@@ -13,7 +13,7 @@ a {
   @include interaction.focus;
 
   &:visited {
-    color: var(--wnyc-link-visited);
+    color: var(--nyco-link-visited);
   }
 
   &:hover {
@@ -30,7 +30,7 @@ a {
 
 .link-anchor {
   &:visited {
-    color: var(--wnyc-link);
+    color: var(--nyco-link);
   }
 
   &:hover {

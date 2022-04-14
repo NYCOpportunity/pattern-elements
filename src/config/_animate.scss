@@ -11,7 +11,7 @@
  * Getter Function
  */
 @function get($token) {
-  @return var(--wnyc-animate-#{$token});
+  @return var(--nyco-animate-#{$token});
 }
 
 @mixin animate($animation: none, $duration: get('duration')) {

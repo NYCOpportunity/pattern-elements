@@ -30,12 +30,12 @@
       content: '';
       position: absolute;
 
-      top: calc(var(--wnyc-grid) * -2);
-      bottom: calc(var(--wnyc-spacing-DEFAULT) * -1);
+      top: calc(var(--nyco-grid) * -2);
+      bottom: calc(var(--nyco-spacing-DEFAULT) * -1);
 
-      inset-inline-start: calc(calc(var(--wnyc-grid) * -2) - var(--wnyc-input-error-border-width));
+      inset-inline-start: calc(calc(var(--nyco-grid) * -2) - var(--nyco-input-error-border-width));
 
-      border-inline-start: var(--wnyc-input-error-border-width) solid var(--wnyc-error);
+      border-inline-start: var(--nyco-input-error-border-width) solid var(--nyco-error);
       display: block;
       width: 0;
     }
@@ -45,7 +45,7 @@
 @mixin error-message() {
   @include typography.set('small');
 
-  color: var(--wnyc-error);
-  margin-bottom: calc(var(--wnyc-grid) * 2);
+  color: var(--nyco-error);
+  margin-bottom: calc(var(--nyco-grid) * 2);
   width: 100%;
 }

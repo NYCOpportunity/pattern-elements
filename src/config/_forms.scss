@@ -3,7 +3,7 @@
 //
 
 // Dependencies
-$fieldset-margin-bottom: calc(var(--wnyc-grid) * 5);
+$fieldset-margin-bottom: calc(var(--nyco-grid) * 5);
 
 @mixin fieldset-reset() {
   border-width: 0;

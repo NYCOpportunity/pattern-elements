@@ -23,7 +23,7 @@ code, pre {
   @include typography.set('code');
 
   a, a:visited, a:hover {
-    color: var(--wnyc-code-link);
+    color: var(--nyco-code-link);
   }
 
   @include interaction.focus();
@@ -61,18 +61,18 @@ pre, .hljs {
   overflow: hidden;
   overflow-x: auto;
 
-  margin-bottom: var(--wnyc-spacing-DEFAULT);
-  padding: var(--wnyc-spacing-DEFAULT);
+  margin-bottom: var(--nyco-spacing-DEFAULT);
+  padding: var(--nyco-spacing-DEFAULT);
 
   @include media.screen-and-min-width('tablet') {
-    padding: calc(var(--wnyc-spacing-DEFAULT) * 2);
+    padding: calc(var(--nyco-spacing-DEFAULT) * 2);
   }
 }
 
 .code-block {
   display: inline-block;
   display: block;
-  margin-bottom: var(--wnyc-spacing-DEFAULT);
+  margin-bottom: var(--nyco-spacing-DEFAULT);
 
   pre, .hljs {
     color: inherit;
@@ -82,30 +82,30 @@ pre, .hljs {
     border: none;
     margin-bottom: 0;
 
-    padding: var(--wnyc-spacing-DEFAULT);
+    padding: var(--nyco-spacing-DEFAULT);
 
     @include media.screen-and-min-width('tablet') {
-      padding: calc(var(--wnyc-spacing-DEFAULT) * 2);
+      padding: calc(var(--nyco-spacing-DEFAULT) * 2);
     }
   }
 }
 
 code, .code, .code-block, pre, .hljs {
-  color: var(--wnyc-code-text);
-  background-color: var(--wnyc-code-background);
-  border-color: var(--wnyc-code-border);
+  color: var(--nyco-code-text);
+  background-color: var(--nyco-code-background);
+  border-color: var(--nyco-code-border);
 
-  --moz-osx-font-smoothing: var(--wnyc-code-moz-osx-font-smoothing);
-    -webkit-font-smoothing: var(--wnyc-code-webkit-font-smoothing);
+  --moz-osx-font-smoothing: var(--nyco-code-moz-osx-font-smoothing);
+    -webkit-font-smoothing: var(--nyco-code-webkit-font-smoothing);
 }
 
 p code, li code, td code {
-  color: var(--wnyc-code-text-code);
+  color: var(--nyco-code-text-code);
 }
 
 // pre, .hljs {
-  // color: var(--wnyc-code-text-base);
-  // background-color: var(--wnyc-code-background);
+  // color: var(--nyco-code-text-base);
+  // background-color: var(--nyco-code-background);
   // border-color: transparent;
 // }
 
@@ -114,32 +114,32 @@ p code, li code, td code {
  */
 
 .css {
-  color: var(--wnyc-code-text-css)
+  color: var(--nyco-code-text-css)
 }
 
 .javascript {
-  color: var(--wnyc-code-text-javascript)
+  color: var(--nyco-code-text-javascript)
 }
 
 .hljs-attr, .hljs-name {
-  color: var(--wnyc-code-text)
+  color: var(--nyco-code-text)
 }
 
 .hljs-comment {
-  color: var(--wnyc-code-text-comment)
+  color: var(--nyco-code-text-comment)
 }
 
 .hljs-keyword, .hljs-attribute, .hljs-selector-tag,
 .hljs-meta-keyword, .hljs-doctag, .hljs-name, .hljs-built_in {
-  color: var(--wnyc-code-text-keyword)
+  color: var(--nyco-code-text-keyword)
 }
 
 .hljs-type, .hljs-string, .hljs-subst, .hljs-number, .hljs-selector-id,
 .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
-  color: var(--wnyc-code-text-string)
+  color: var(--nyco-code-text-string)
 }
 
 .hljs-regexp, .hljs-symbol, .hljs-variable, .hljs-template-variable,
 .hljs-link, .hljs-selector-attr, .hljs-selector-pseudo {
-  color: var(--wnyc-code-text-symbol)
+  color: var(--nyco-code-text-symbol)
 }

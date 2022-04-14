@@ -15,7 +15,7 @@
   text-align: $direction;
   width: 100%;
   max-width: 100%;
-  margin-bottom: var(--wnyc-spacing-DEFAULT);
+  margin-bottom: var(--nyco-spacing-DEFAULT);
 
   thead {
     tr {
@@ -26,7 +26,7 @@
   tbody {
     tr {
       &:nth-child(odd) {
-        background-color: var(--wnyc-table-odd)
+        background-color: var(--nyco-table-odd)
       }
     }
   }
@@ -37,7 +37,7 @@
   }
 
   th, td {
-    padding: var(--wnyc-cell-padding)
+    padding: var(--nyco-cell-padding)
   }
 }
 
@@ -48,7 +48,7 @@
   th, td {
     border-bottom: 2px solid;
     border-inline-end: 2px solid;
-    border-color: var(--wnyc-table-odd);
+    border-color: var(--nyco-table-odd);
   }
 
   td:last-of-type {
@@ -62,25 +62,25 @@
 
   thead th {
     vertical-align: bottom;
-    background-color: var(--wnyc-table-even);
-    border-bottom-color: var(--wnyc-table-odd);
+    background-color: var(--nyco-table-even);
+    border-bottom-color: var(--nyco-table-odd);
   }
 
   tbody {
     tr:nth-child(even) th {
-      background-color: var(--wnyc-table-even);
-      border-inline-end-color: var(--wnyc-table-odd);
+      background-color: var(--nyco-table-even);
+      border-inline-end-color: var(--nyco-table-odd);
     }
 
     tr:nth-child(odd) th {
-      background-color: var(--wnyc-table-odd);
+      background-color: var(--nyco-table-odd);
     }
   }
 
   // Top Left Corner
   thead > tr:first-of-type > th:first-of-type {
     vertical-align: middle;
-    border-inline-end-color: var(--wnyc-table-odd);
+    border-inline-end-color: var(--nyco-table-odd);
   }
 }
 

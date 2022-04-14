@@ -11,22 +11,22 @@ $tokens:(
   fontFace-secondary: "'Lato', sans-serif",
   fontFace-code: "monospace",
   fontFamily: (
-    body: var(--wnyc-fontFace-secondary),
-    h1: var(--wnyc-fontFace-primary),
-    h2: var(--wnyc-fontFace-primary),
-    h3: var(--wnyc-fontFace-primary),
-    blockquote: var(--wnyc-fontFace-primary),
-    h4: var(--wnyc-fontFace-secondary),
-    h5: var(--wnyc-fontFace-secondary),
-    h6: var(--wnyc-fontFace-secondary),
-    p: var(--wnyc-fontFace-secondary),
-    button: var(--wnyc-fontFace-secondary),
-    tables: var(--wnyc-fontFace-secondary),
-    option: var(--wnyc-fontFace-secondary),
-    question: var(--wnyc-fontFace-secondary),
-    code: var(--wnyc-fontFace-code),
-    primary: var(--wnyc-fontFace-primary),
-    secondary: var(--wnyc-fontFace-secondary),
+    body: var(--nyco-fontFace-secondary),
+    h1: var(--nyco-fontFace-primary),
+    h2: var(--nyco-fontFace-primary),
+    h3: var(--nyco-fontFace-primary),
+    blockquote: var(--nyco-fontFace-primary),
+    h4: var(--nyco-fontFace-secondary),
+    h5: var(--nyco-fontFace-secondary),
+    h6: var(--nyco-fontFace-secondary),
+    p: var(--nyco-fontFace-secondary),
+    button: var(--nyco-fontFace-secondary),
+    tables: var(--nyco-fontFace-secondary),
+    option: var(--nyco-fontFace-secondary),
+    question: var(--nyco-fontFace-secondary),
+    code: var(--nyco-fontFace-code),
+    primary: var(--nyco-fontFace-primary),
+    secondary: var(--nyco-fontFace-secondary),
     inherit: inherit
   ),
   fontWeight: (
@@ -155,286 +155,247 @@ $tokens:(
     white: #FFFFFF,
     transparent: rgba(255, 255, 255, 0),
     inherit: inherit,
-    text: var(--wnyc-text),
-    brand: var(--wnyc-brand),
-    alt: var(--wnyc-alt),
-    em: var(--wnyc-em),
-    primary: var(--wnyc-primary),
-    secondary: var(--wnyc-secondary),
-    tertiary: var(--wnyc-tertiary),
-    scale-0: var(--wnyc-scale-0),
-    scale-1: var(--wnyc-scale-1),
-    scale-2: var(--wnyc-scale-2),
-    scale-3: var(--wnyc-scale-3),
-    scale-4: var(--wnyc-scale-4)
+    text: var(--nyco-text),
+    brand: var(--nyco-brand),
+    alt: var(--nyco-alt),
+    em: var(--nyco-em),
+    primary: var(--nyco-primary),
+    secondary: var(--nyco-secondary),
+    tertiary: var(--nyco-tertiary),
+    scale-0: var(--nyco-scale-0),
+    scale-1: var(--nyco-scale-1),
+    scale-2: var(--nyco-scale-2),
+    scale-3: var(--nyco-scale-3),
+    scale-4: var(--nyco-scale-4)
   ),
   colorMode: (
-    default: (
-      text: var(--wnyc-color-white),
-      brand: var(--wnyc-color-blue-l-2),
-      alt: var(--wnyc-color-blue-l-3),
-      em: var(--wnyc-color-yellow-l-2),
-      error: var(--wnyc-color-yellow-l-2),
-      primary: var(--wnyc-color-blue-l-1),
-      secondary: var(--wnyc-color-green-l-3),
-      tertiary: var(--wnyc-color-yellow-l-2),
-      link: var(--wnyc-color-blue-l-2),
-      link-hover: var(--wnyc-color-blue-l-3),
-      link-visited: var(--wnyc-color-blue-l-3),
-      focus: var(--wnyc-color-blue-l-2),
-      focus-background: var(--wnyc-background),
-      background: var(--wnyc-scale-1),
+    dark: (
+      text: var(--nyco-color-white),
+      brand: var(--nyco-color-blue-l-2),
+      alt: var(--nyco-color-blue-l-3),
+      em: var(--nyco-color-yellow-l-2),
+      error: var(--nyco-color-yellow-l-2),
+      primary: var(--nyco-color-blue-l-1),
+      secondary: var(--nyco-color-green-l-3),
+      tertiary: var(--nyco-color-yellow-l-2),
+      link: var(--nyco-color-blue-l-2),
+      link-hover: var(--nyco-color-blue-l-3),
+      link-visited: var(--nyco-color-blue-l-3),
+      focus: var(--nyco-color-blue-l-2),
+      focus-background: var(--nyco-background),
+      background: var(--nyco-scale-1),
       webkit-font-smoothing: antialiased,
       moz-osx-font-smoothing: grayscale,
       scale: (
-        0: var(--wnyc-color-default-0),
-        1: var(--wnyc-color-default-1),
-        2: var(--wnyc-color-default-2),
-        3: var(--wnyc-color-default-3),
-        4: var(--wnyc-color-default-4)
-      ),
-      card: (
-        header: var(--wnyc-scale-3),
-        body: var(--wnyc-scale-4)
-      ),
-      modal: (
-        text: var(--wnyc-scale-1),
-        alt: var(--wnyc-scale-2),
-        background: var(--wnyc-color-blue-l-3),
-        link: var(--wnyc-scale-4),
-        link-hover: var(--wnyc-scale-3),
-        link-visited: var(--wnyc-scale-3),
-        smoothing: false
+        0: var(--nyco-color-default-0),
+        1: var(--nyco-color-default-1),
+        2: var(--nyco-color-default-2),
+        3: var(--nyco-color-default-3),
+        4: var(--nyco-color-default-4)
       ),
       input: (
-        text: var(--wnyc-scale-1),
-        background: var(--wnyc-color-white),
-        border: var(--wnyc-color-transparent)
+        text: var(--nyco-scale-1),
+        background: var(--nyco-color-white),
+        border: var(--nyco-color-transparent)
       ),
       option: (
-        text: var(--wnyc-color-blue-l-2),
-        background: var(--wnyc-scale-2),
-        border: var(--wnyc-color-transparent),
-        text-hover : var(--wnyc-color-blue-l-3),
-        border-hover: var(--wnyc-color-transparent),
-        background-hover: var(--wnyc-scale-0),
-        text-checked: var(--wnyc-color-blue-l-3),
-        background-checked: var(--wnyc-scale-0),
-        graphic-checkbox: var(--wnyc-color-transparent),
-        graphic-checkbox-checked: var(--wnyc-scale-0)
+        text: var(--nyco-color-blue-l-2),
+        background: var(--nyco-scale-2),
+        border: var(--nyco-color-transparent),
+        text-hover : var(--nyco-color-blue-l-3),
+        border-hover: var(--nyco-color-transparent),
+        background-hover: var(--nyco-scale-0),
+        text-checked: var(--nyco-color-blue-l-3),
+        background-checked: var(--nyco-scale-0),
+        graphic-checkbox: var(--nyco-color-transparent),
+        graphic-checkbox-checked: var(--nyco-scale-0)
       ),
       statuses: (
         primary: (
-          text: var(--wnyc-scale-2),
-          background: var(--wnyc-color-blue-l-2)
+          text: var(--nyco-scale-2),
+          background: var(--nyco-color-blue-l-2)
         ),
         secondary: (
-          text: var(--wnyc-scale-2),
-          background: var(--wnyc-color-green-l-3)
+          text: var(--nyco-scale-2),
+          background: var(--nyco-color-green-l-3)
         ),
         tertiary: (
-          text: var(--wnyc-scale-2),
-          background: var(--wnyc-color-yellow-l-1)
+          text: var(--nyco-scale-2),
+          background: var(--nyco-color-yellow-l-1)
         ),
         alt: (
-          text: var(--wnyc-scale-1),
-          background: var(--wnyc-color-blue-l-3)
+          text: var(--nyco-scale-1),
+          background: var(--nyco-color-blue-l-3)
         )
       ),
       button: (
         primary: (
-          text: var(--wnyc-color-blue-l-2),
-          text-hover: var(--wnyc-color-blue-l-3),
-          background: var(--wnyc-scale-2),
-          background-hover: var(--wnyc-scale-0)
+          text: var(--nyco-color-blue-l-2),
+          text-hover: var(--nyco-color-blue-l-3),
+          background: var(--nyco-scale-2),
+          background-hover: var(--nyco-scale-0)
         ),
         secondary: (
-          text: var(--wnyc-color-green-l-3),
-          text-hover: var(--wnyc-color-green-l-3),
-          background: var(--wnyc-scale-2),
-          background-hover: var(--wnyc-scale-0)
+          text: var(--nyco-color-green-l-3),
+          text-hover: var(--nyco-color-green-l-3),
+          background: var(--nyco-scale-2),
+          background-hover: var(--nyco-scale-0)
         ),
         tertiary: (
-          text: var(--wnyc-color-yellow-l-2),
-          text-hover: var(--wnyc-color-yellow-l-3),
-          background: var(--wnyc-scale-2),
-          background-hover: var(--wnyc-scale-0)
+          text: var(--nyco-color-yellow-l-2),
+          text-hover: var(--nyco-color-yellow-l-3),
+          background: var(--nyco-scale-2),
+          background-hover: var(--nyco-scale-0)
         ),
         disabled: (
-          text: var(--wnyc-color-light-0),
-          background: var(--wnyc-scale-2)
+          text: var(--nyco-color-light-0),
+          background: var(--nyco-scale-2)
         )
       ),
       badge: (
-        color: var(--wnyc-color-yellow-d-4),
-        background: var(--wnyc-color-yellow-l-3)
+        color: var(--nyco-color-yellow-d-4),
+        background: var(--nyco-color-yellow-l-3)
       ),
       table: (
-        odd: var(--wnyc-scale-3),
-        even: var(--wnyc-scale-2)
+        odd: var(--nyco-scale-3),
+        even: var(--nyco-scale-2)
       ),
       descriptionList: (
-        term: var(--wnyc-alt),
-        odd: var(--wnyc-scale-3),
-        even: var(--wnyc-scale-2),
-        border: var(--wnyc-scale-2)
+        term: var(--nyco-alt),
+        odd: var(--nyco-scale-3),
+        even: var(--nyco-scale-2),
+        border: var(--nyco-scale-2)
       ),
       code: (
-        text: var(--wnyc-color-blue-l-3),
-        text-base: var(--wnyc-color-blue-l-3),
-        text-keyword: var(--wnyc-color-blue-l-1),
-        text-javascript: var(--wnyc-color-blue-l-3),
-        text-css: var(--wnyc-color-blue-l-3),
-        text-comment: var(--wnyc-color-purple-l-1),
-        text-string: var(--wnyc-color-yellow-l-1),
-        text-symbol: var(--wnyc-color-yellow-l-1),
-        text-code: var(--wnyc-color-yellow-l-1),
-        link: var(--wnyc-color-blue-l-3),
-        background: var(--wnyc-color-default-2),
-        border: var(--wnyc-color-transparent),
+        text: var(--nyco-color-blue-l-3),
+        text-base: var(--nyco-color-blue-l-3),
+        text-keyword: var(--nyco-color-blue-l-1),
+        text-javascript: var(--nyco-color-blue-l-3),
+        text-css: var(--nyco-color-blue-l-3),
+        text-comment: var(--nyco-color-purple-l-1),
+        text-string: var(--nyco-color-yellow-l-1),
+        text-symbol: var(--nyco-color-yellow-l-1),
+        text-code: var(--nyco-color-yellow-l-1),
+        link: var(--nyco-color-blue-l-3),
+        background: var(--nyco-color-default-2),
+        border: var(--nyco-color-transparent),
         webkit-font-smoothing: antialiased,
         moz-osx-font-smoothing: grayscale
-      ),
-      newsletter: (
-        heading: var(--wnyc-text-alt),
-        text: inherit,
-        background: var(--wnyc-scale-2)
       ),
       shadow: (
         up: 0 3px 12px 2px rgba(0, 0, 0, 0.15)
       )
     ),
-    light: (
-      text: var(--wnyc-color-default-3),
-      brand: var(--wnyc-color-blue),
-      alt: var(--wnyc-text),
-      em: var(--wnyc-color-yellow-d-4),
-      error: var(--wnyc-color-red),
-      primary: var(--wnyc-color-blue),
-      secondary: var(--wnyc-color-green),
-      tertiary: var(--wnyc-color-yellow-d-1),
-      link: var(--wnyc-color-blue),
-      link-hover: var(--wnyc-text),
-      link-visited: var(--wnyc-text),
-      focus: var(--wnyc-color-blue),
-      focus-background: var(--wnyc-background),
-      background: var(--wnyc-scale-1),
+    default: (
+      text: var(--nyco-color-default-3),
+      brand: var(--nyco-color-blue),
+      alt: var(--nyco-text),
+      em: var(--nyco-color-yellow-d-4),
+      error: var(--nyco-color-red),
+      primary: var(--nyco-color-blue),
+      secondary: var(--nyco-color-green),
+      tertiary: var(--nyco-color-yellow-d-1),
+      link: var(--nyco-color-blue),
+      link-hover: var(--nyco-text),
+      link-visited: var(--nyco-text),
+      focus: var(--nyco-color-blue),
+      focus-background: var(--nyco-background),
+      background: var(--nyco-scale-1),
       webkit-font-smoothing: auto,
       moz-osx-font-smoothing: auto,
       scale: (
-        0: var(--wnyc-color-light-0),
-        1: var(--wnyc-color-light-1),
-        2: var(--wnyc-color-light-2),
-        3: var(--wnyc-color-light-3),
-        4: var(--wnyc-color-light-4)
-      ),
-      card: (
-        header: var(--wnyc-color-light-2),
-        body: var(--wnyc-color-light-0)
-      ),
-      modal: (
-        text: var(--wnyc-color-default-1),
-        alt: var(--wnyc-scale-2),
-        background: var(--wnyc-color-blue-l-3),
-        link: var(--wnyc-color-blue),
-        link-hover: var(--wnyc-color-default-1),
-        link-visited: var(--wnyc-color-default-1),
-        smoothing: false,
-        text-alt: var(--wnyc-scale-2)
+        0: var(--nyco-color-light-0),
+        1: var(--nyco-color-light-1),
+        2: var(--nyco-color-light-2),
+        3: var(--nyco-color-light-3),
+        4: var(--nyco-color-light-4)
       ),
       input: (
-        text: var(--wnyc-color-default-1),
-        background: var(--wnyc-color-white),
-        border: var(--wnyc-color-default-1)
+        text: var(--nyco-color-default-1),
+        background: var(--nyco-color-white),
+        border: var(--nyco-color-default-1)
       ),
       option: (
-        text: var(--wnyc-text),
-        background: var(--wnyc-scale-2),
-        border: var(--wnyc-color-transparent),
-        text-hover : var(--wnyc-link),
-        border-hover: var(--wnyc-link),
-        background-hover: var(--wnyc-scale-0),
-        text-checked: var(--wnyc-color-blue),
-        background-checked: var(--wnyc-scale-0),
-        graphic-checkbox: var(--wnyc-color-transparent),
-        graphic-checkbox-checked: var(--wnyc-scale-0)
+        text: var(--nyco-text),
+        background: var(--nyco-scale-2),
+        border: var(--nyco-color-transparent),
+        text-hover : var(--nyco-link),
+        border-hover: var(--nyco-link),
+        background-hover: var(--nyco-scale-0),
+        text-checked: var(--nyco-color-blue),
+        background-checked: var(--nyco-scale-0),
+        graphic-checkbox: var(--nyco-color-transparent),
+        graphic-checkbox-checked: var(--nyco-scale-0)
       ),
       statuses: (
         primary: (
-          text: var(--wnyc-text),
-          background: var(--wnyc-color-blue-l-3)
+          text: var(--nyco-text),
+          background: var(--nyco-color-blue-l-3)
         ),
         secondary: (
-          text: var(--wnyc-text),
-          background: var(--wnyc-color-green-l-4)
+          text: var(--nyco-text),
+          background: var(--nyco-color-green-l-4)
         ),
         tertiary: (
-          text: var(--wnyc-text),
-          background: var(--wnyc-color-yellow-l-2)
+          text: var(--nyco-text),
+          background: var(--nyco-color-yellow-l-2)
         ),
         alt: (
-          text: var(--wnyc-text),
-          background: var(--wnyc-color-blue-l-3)
+          text: var(--nyco-text),
+          background: var(--nyco-color-blue-l-3)
         )
       ),
       button: (
         primary: (
-          text: var(--wnyc-scale-0),
-          text-hover: var(--wnyc-scale-0),
-          background: var(--wnyc-color-blue),
-          background-hover: var(--wnyc-color-blue-d-1)
+          text: var(--nyco-scale-0),
+          text-hover: var(--nyco-scale-0),
+          background: var(--nyco-color-blue),
+          background-hover: var(--nyco-color-blue-d-1)
         ),
         secondary: (
-          text: var(--wnyc-scale-0),
-          text-hover: var(--wnyc-scale-0),
-          background: var(--wnyc-color-default-2),
-          background-hover: var(--wnyc-color-default-4)
+          text: var(--nyco-scale-0),
+          text-hover: var(--nyco-scale-0),
+          background: var(--nyco-color-default-2),
+          background-hover: var(--nyco-color-default-4)
         ),
         tertiary: (
-          text: var(--wnyc-text),
-          text-hover: var(--wnyc-text),
-          background: var(--wnyc-color-yellow-l-1),
-          background-hover: var(--wnyc-color-yellow-l-2)
+          text: var(--nyco-text),
+          text-hover: var(--nyco-text),
+          background: var(--nyco-color-yellow-l-1),
+          background-hover: var(--nyco-color-yellow-l-2)
         ),
         disabled: (
-          text: var(--wnyc-color-default-4),
-          background: var(--wnyc-scale-3)
+          text: var(--nyco-color-default-4),
+          background: var(--nyco-scale-3)
         )
       ),
       badge: (
-        color: var(--wnyc-color-yellow-d-4),
-        background: var(--wnyc-color-yellow-l-3)
+        color: var(--nyco-color-yellow-d-4),
+        background: var(--nyco-color-yellow-l-3)
       ),
       table: (
-        odd: var(--wnyc-scale-3),
-        even: var(--wnyc-scale-2)
+        odd: var(--nyco-scale-3),
+        even: var(--nyco-scale-2)
       ),
       descriptionList: (
-        term: var(--wnyc-alt),
-        odd: var(--wnyc-scale-3),
-        even: var(--wnyc-scale-2),
-        border: var(--wnyc-scale-2)
+        term: var(--nyco-alt),
+        odd: var(--nyco-scale-3),
+        even: var(--nyco-scale-2),
+        border: var(--nyco-scale-2)
       ),
       code: (
-        text: var(--wnyc-color-blue-l-3),
-        text-base: var(--wnyc-color-blue-l-3),
-        text-keyword: var(--wnyc-color-blue-l-1),
-        text-javascript: var(--wnyc-color-blue-l-3),
-        text-css: var(--wnyc-color-blue-l-3),
-        text-comment: var(--wnyc-color-purple-l-1),
-        text-string: var(--wnyc-color-yellow-l-1),
-        text-symbol: var(--wnyc-color-yellow-l-1),
-        text-code: var(--wnyc-color-yellow-l-1),
-        link: var(--wnyc-color-blue-l-3),
-        background: var(--wnyc-color-default-2),
-        border: var(--wnyc-color-transparent),
-        webkit-font-smoothing: antialiased,
-        moz-osx-font-smoothing: grayscale
-      ),
-      newsletter: (
-        heading: var(--wnyc-color-white),
-        text: var(--wnyc-color-white),
-        background: var(--wnyc-color-default-3),
+        text: var(--nyco-color-blue-l-3),
+        text-base: var(--nyco-color-blue-l-3),
+        text-keyword: var(--nyco-color-blue-l-1),
+        text-javascript: var(--nyco-color-blue-l-3),
+        text-css: var(--nyco-color-blue-l-3),
+        text-comment: var(--nyco-color-purple-l-1),
+        text-string: var(--nyco-color-yellow-l-1),
+        text-symbol: var(--nyco-color-yellow-l-1),
+        text-code: var(--nyco-color-yellow-l-1),
+        link: var(--nyco-color-blue-l-3),
+        background: var(--nyco-color-default-2),
+        border: var(--nyco-color-transparent),
         webkit-font-smoothing: antialiased,
         moz-osx-font-smoothing: grayscale
       ),
@@ -457,14 +418,9 @@ $tokens:(
     half: 50%,
     90vh: 90vh,
     100vh: 100vh,
-    mobile-menu-width: 80vw,
-    content-width: calc(var(--wnyc-grid) * 112),
-    site-max-width: calc(var(--wnyc-grid) * 180),
-    site-min-width: calc(var(--wnyc-grid) * 40),
-    navigation-logo: calc(var(--wnyc-grid) * 16),
-    feedback-height: calc(var(--wnyc-grid) * 12.5),
-    navigation-height: calc(var(--wnyc-grid) * 10),
-    webshare-fallback: calc(var(--wnyc-grid) * 54)
+    content-width: calc(var(--nyco-grid) * 112),
+    site-max-width: calc(var(--nyco-grid) * 180),
+    site-min-width: calc(var(--nyco-grid) * 40)
   ),
   z: (
     0: 0,
@@ -498,38 +454,38 @@ $tokens:(
   ),
   spacing: (
     0: 0,
-    1: calc(var(--wnyc-grid) * 1),
-    2: calc(var(--wnyc-grid) * 2),
-    3: calc(var(--wnyc-grid) * 3),
-    4: calc(var(--wnyc-grid) * 4),
-    5: calc(var(--wnyc-grid) * 5),
-    6: calc(var(--wnyc-grid) * 6),
-    7: calc(var(--wnyc-grid) * 7),
-    8: calc(var(--wnyc-grid) * 8),
-    DEFAULT: calc(var(--wnyc-grid) * 3)
+    1: calc(var(--nyco-grid) * 1),
+    2: calc(var(--nyco-grid) * 2),
+    3: calc(var(--nyco-grid) * 3),
+    4: calc(var(--nyco-grid) * 4),
+    5: calc(var(--nyco-grid) * 5),
+    6: calc(var(--nyco-grid) * 6),
+    7: calc(var(--nyco-grid) * 7),
+    8: calc(var(--nyco-grid) * 8),
+    DEFAULT: calc(var(--nyco-grid) * 3)
   ),
   margin: (
     0: 0,
-    1: calc(var(--wnyc-grid) * 1),
-    2: calc(var(--wnyc-grid) * 2),
-    3: calc(var(--wnyc-grid) * 3),
-    4: calc(var(--wnyc-grid) * 4),
-    5: calc(var(--wnyc-grid) * 5),
-    6: calc(var(--wnyc-grid) * 6),
-    7: calc(var(--wnyc-grid) * 7),
-    8: calc(var(--wnyc-grid) * 8),
-    DEFAULT: calc(var(--wnyc-grid) * 3),
+    1: calc(var(--nyco-grid) * 1),
+    2: calc(var(--nyco-grid) * 2),
+    3: calc(var(--nyco-grid) * 3),
+    4: calc(var(--nyco-grid) * 4),
+    5: calc(var(--nyco-grid) * 5),
+    6: calc(var(--nyco-grid) * 6),
+    7: calc(var(--nyco-grid) * 7),
+    8: calc(var(--nyco-grid) * 8),
+    DEFAULT: calc(var(--nyco-grid) * 3),
     auto: auto
   ),
   iconSize: (
-    1: (calc(var(--wnyc-grid) * 1), calc(var(--wnyc-grid) * 1)),
-    2: (calc(var(--wnyc-grid) * 2), calc(var(--wnyc-grid) * 2)),
-    3: (calc(var(--wnyc-grid) * 3), calc(var(--wnyc-grid) * 3)),
-    4: (calc(var(--wnyc-grid) * 4), calc(var(--wnyc-grid) * 4)),
-    5: (calc(var(--wnyc-grid) * 5), calc(var(--wnyc-grid) * 5)),
-    6: (calc(var(--wnyc-grid) * 6), calc(var(--wnyc-grid) * 6)),
-    7: (calc(var(--wnyc-grid) * 7), calc(var(--wnyc-grid) * 7)),
-    8: (calc(var(--wnyc-grid) * 8), calc(var(--wnyc-grid) * 8)),
+    1: (calc(var(--nyco-grid) * 1), calc(var(--nyco-grid) * 1)),
+    2: (calc(var(--nyco-grid) * 2), calc(var(--nyco-grid) * 2)),
+    3: (calc(var(--nyco-grid) * 3), calc(var(--nyco-grid) * 3)),
+    4: (calc(var(--nyco-grid) * 4), calc(var(--nyco-grid) * 4)),
+    5: (calc(var(--nyco-grid) * 5), calc(var(--nyco-grid) * 5)),
+    6: (calc(var(--nyco-grid) * 6), calc(var(--nyco-grid) * 6)),
+    7: (calc(var(--nyco-grid) * 7), calc(var(--nyco-grid) * 7)),
+    8: (calc(var(--nyco-grid) * 8), calc(var(--nyco-grid) * 8)),
     default: (1rem, 1rem),
     logo-google-translate: (175px, 16px),
     logo-standard-menu-item: (130px, 18px),
@@ -559,7 +515,7 @@ $tokens:(
     error-border-width: 4px,
     icon-padding: 30px,
     currency-font-size: 22px,
-    search-icon: (calc(var(--wnyc-grid) * 3), calc(var(--wnyc-grid) * 3))
+    search-icon: (calc(var(--nyco-grid) * 3), calc(var(--nyco-grid) * 3))
   ),
   select: (
     inner-size: 1rem,
@@ -582,15 +538,15 @@ $tokens:(
     font-weight: bold,
     line-height: inherit,
     text-transform: normal,
-    padding: 0 var(--wnyc-grid),
+    padding: 0 var(--nyco-grid),
     radius: 10px,
     small-line-height: 1.3,
-    small-padding: 0 calc(var(--wnyc-grid) * 0.5)
+    small-padding: 0 calc(var(--nyco-grid) * 0.5)
   ),
   shadow: (
-    up-default: 0 3px 12px 2px rgba(0, 0, 0, 0.15),
+    up-dark: 0 3px 12px 2px rgba(0, 0, 0, 0.15),
     up-light: 0 3px 12px 2px rgba(21, 60, 96, 0.13),
-    up: var(--wnyc-shadow-up),
+    up: var(--nyco-shadow-up),
     none: none
   ),
   cell: (

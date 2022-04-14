@@ -17,21 +17,21 @@
   font-weight: normal;
   font-style: normal;
 
-  line-height: var(--wnyc-input-inner-size);
+  line-height: var(--nyco-input-inner-size);
   text-overflow: ellipsis;
-  padding: calc(calc(var(--wnyc-grid ) * 2) - var(--wnyc-input-border-width));
-  border: var(--wnyc-input-border-width) var(--wnyc-input-border-style);
+  padding: calc(calc(var(--nyco-grid ) * 2) - var(--nyco-input-border-width));
+  border: var(--nyco-input-border-width) var(--nyco-input-border-style);
   border-color: inherit;
-  border-radius: var(--wnyc-input-radius);
+  border-radius: var(--nyco-input-radius);
 
   @include interaction.focus();
 }
 
 @mixin icon() {
-  padding-inline-end: var(--wnyc-input-icon-padding);
+  padding-inline-end: var(--nyco-input-icon-padding);
 }
 
 @mixin currency-icon() {
-  font-size: var(--wnyc-input-currency-font-size);
+  font-size: var(--nyco-input-currency-font-size);
   font-weight: bold;
 }

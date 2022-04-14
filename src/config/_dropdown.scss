@@ -21,16 +21,16 @@
 }
 
 @mixin max-height() {
-  max-height: var(--wnyc-dropdown-max-height);
+  max-height: var(--nyco-dropdown-max-height);
 }
 
 @mixin min-height() {
-  min-height: var(--wnyc-dropdown-max-height);
+  min-height: var(--nyco-dropdown-max-height);
 }
 
 @mixin inner() {
   @include layouts.wrap();
 
-  padding-top: var(--wnyc-spacing-DEFAULT);
-  padding-bottom: var(--wnyc-spacing-DEFAULT);
+  padding-top: var(--nyco-spacing-DEFAULT);
+  padding-bottom: var(--nyco-spacing-DEFAULT);
 }

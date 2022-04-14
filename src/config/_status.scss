@@ -6,8 +6,8 @@
 // @use ...
 
 @mixin base($type) {
-  color: var(--wnyc-statuses-#{$type}-text);
-  background-color:  var(--wnyc-statuses-#{$type}-background);
+  color: var(--nyco-statuses-#{$type}-text);
+  background-color:  var(--nyco-statuses-#{$type}-background);
 
   a:not(.btn), a:not(.btn):hover {
     color: inherit !important

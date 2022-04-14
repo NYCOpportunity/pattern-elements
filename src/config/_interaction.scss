@@ -9,12 +9,12 @@
 
 @mixin blurred() {
   outline: 0px solid transparent;
-  outline-offset: var(--wnyc-focus-gap);
+  outline-offset: var(--nyco-focus-gap);
 }
 
 @mixin focused() {
-  outline-width: var(--wnyc-focus-width);
-  outline-color: var(--wnyc-focus);
+  outline-width: var(--nyco-focus-width);
+  outline-color: var(--nyco-focus);
 }
 
 // input:focus + .opt__base {
@@ -26,9 +26,9 @@
   }
 
   // outline: none;
-  // box-shadow: 0 0 0 var(--wnyc-focus-width) var(--wnyc-focus);
+  // box-shadow: 0 0 0 var(--nyco-focus-width) var(--nyco-focus);
 
   // outline: none;
-  // box-shadow: 0 0 0 var(--wnyc-focus-gap) var(--wnyc-focus-background),
-              // 0 0 0 calc(var(--wnyc-focus-gap) + var(--wnyc-focus-width)) var(--wnyc-focus);
+  // box-shadow: 0 0 0 var(--nyco-focus-gap) var(--nyco-focus-background),
+              // 0 0 0 calc(var(--nyco-focus-gap) + var(--nyco-focus-width)) var(--nyco-focus);
 }
