@@ -6,8 +6,7 @@
 module.exports = {
   commands: [
     'styles',
-    'properties',
-    'slm'
+    'properties'
   ],
   concurrently: {
     prefix: 'none',
