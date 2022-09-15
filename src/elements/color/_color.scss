@@ -1,0 +1,14 @@
+/**
+ * Colors
+ */
+
+// Dependencies
+
+// Declarations
+.bg {
+  color: var(--nyco-text);
+  background-color: var(--nyco-background);
+
+  -moz-osx-font-smoothing: var(--nyco-moz-osx-font-smoothing);
+   -webkit-font-smoothing: var(--nyco-webkit-font-smoothing);
+}

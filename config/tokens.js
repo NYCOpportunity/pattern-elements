@@ -98,7 +98,7 @@ const colorTokens = {
 
   'link': 'var(--nyco-color-blue-l-2)',
   'link-hover': 'var(--nyco-color-blue-l-3)',
-  // 'link-visited': 'var(--nyco-color-purple-l-2)',
+  'link-visited': 'var(--nyco-color-purple-l-2)',
   'link-visited': 'var(--nyco-color-blue-l-3)',
 
   'focus': 'var(--nyco-color-blue-l-2)',
@@ -327,6 +327,7 @@ module.exports = {
   'stringKeys': 'stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code',
   'version': package.version,
   'cdn': `"https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v${package.version}/dist/"`,
+  'googleFonts': '"https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"',
   'language': [
     'default',
     'ar',
@@ -341,8 +342,8 @@ module.exports = {
   ],
   'fontFace-system': 'ui-sans-serif, system-ui, sans-serif',
   'fontFace-nyc': '\'Helvetica Neue Pro\', \'Helvetica Neue\', Helvetica, Arial, sans-serif',
-  'fontFace-primary': '\'Montserrat\', sans-serif',
-  'fontFace-secondary': '\'Lato\', sans-serif',
+  'fontFace-primary': '\'Public Sans\', sans-serif',
+  'fontFace-secondary': '\'Public Sans\', sans-serif',
   'fontFace-code': 'monospace',
   'fontFamily': {
     'body': 'var(--nyco-fontFace-secondary)',

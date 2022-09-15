@@ -1,15 +1,11 @@
-/**
- * Elements
- */
+@charset 'utf-8';
 
-// Elements include universal styles, atomic patterns, and css systems. Examples
-// include classes that assign color, modify the display of elements, or set up
-// scaffolding like typography or grid systems. Utilities will have their own
-// namespace prefixes based on their attributes.
+/** Elements */
 @forward 'elements/badge/_badge.scss';
 @forward 'elements/base/_base.scss';
 @forward 'elements/buttons/_buttons.scss';
 @forward 'elements/code/_code.scss';
+@forward 'elements/color/_color.scss';
 @forward 'elements/description-lists/_description-lists.scss';
 @forward 'elements/dividers/_dividers.scss';
 @forward 'elements/forms/_forms.scss';
@@ -26,4 +22,4 @@
 @forward 'elements/tables/_tables.scss';
 @forward 'elements/toggles/_toggles.scss';
 @forward 'elements/tooltips/_tooltips.scss';
-// elements - end
+/** Elements - end */
