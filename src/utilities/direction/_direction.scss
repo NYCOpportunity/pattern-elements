@@ -1,0 +1,18 @@
+/**
+ * Direction
+ */
+
+// Dependencies
+
+// Declarations
+[dir='rtl'] {
+  .rtl\:flip {
+    transform: scaleX(-1);
+  }
+}
+
+[dir='ltr'] {
+  .ltr\:flip {
+    transform: scaleX(-1);
+  }
+}

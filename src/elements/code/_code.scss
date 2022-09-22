@@ -39,11 +39,11 @@ code, pre {
 }
 
 p code, li code, td code {
-  font-size: 80%;
-  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 
   border-radius: 3px;
-  padding: 0.1em 0.4em 0.3em;
+  padding: 0.1em 0.4em 0.2em;
   margin: 0;
   display: inline;
   white-space: nowrap;
@@ -95,6 +95,7 @@ code, .code, .code-block, pre, .hljs {
   background-color: var(--nyco-code-background);
   border-color: var(--nyco-code-border);
 
+  // font-smooth: var(--nyco-code-font-smooth); // non-standard & not on standards track
   --moz-osx-font-smoothing: var(--nyco-code-moz-osx-font-smoothing);
     -webkit-font-smoothing: var(--nyco-code-webkit-font-smoothing);
 }

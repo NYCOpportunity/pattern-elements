@@ -9,4 +9,5 @@
 
 - for (let i in this.input.options)
   - option = this.input.options[i];
-  = partial('/elements/options/options.slm');
+
+  = partial('../options/options.slm');

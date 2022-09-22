@@ -3,6 +3,7 @@
 /** Elements */
 @forward 'elements/badge/_badge.scss';
 @forward 'elements/base/_base.scss';
+@forward 'elements/breadcrumbs/breadcrumbs';
 @forward 'elements/buttons/_buttons.scss';
 @forward 'elements/code/_code.scss';
 @forward 'elements/color/_color.scss';
@@ -20,6 +21,17 @@
 @forward 'elements/overlays/_overlays.scss';
 @forward 'elements/selects/_selects.scss';
 @forward 'elements/tables/_tables.scss';
-@forward 'elements/toggles/_toggles.scss';
 @forward 'elements/tooltips/_tooltips.scss';
 /** Elements - end */
+
+/** Utilities */
+@forward 'utilities/animate/animate';
+@forward 'utilities/cell/cell';
+@forward 'utilities/clearfix/clearfix';
+@forward 'utilities/direction/direction';
+@forward 'utilities/print/print';
+@forward 'utilities/screen-readers/screen-readers'; // tailwindcss includes this utility but it is used by many element and components so it should be included
+@forward 'utilities/scroll/scroll';
+@forward 'utilities/status/status';
+@forward 'utilities/toggle/toggle';
+/** Utilities - end */

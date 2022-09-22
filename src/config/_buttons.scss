@@ -77,27 +77,27 @@
   @include icons.spacing;
 }
 
-@mixin icon-toggle() {
-  &[aria-pressed='false'] {
-    .icon {
-      display: inline-block;
-    }
+// @mixin icon-toggle() {
+//   &[aria-pressed='false'] {
+//     .icon {
+//       display: inline-block;
+//     }
 
-    .icon-pressed {
-      display: none;
-    }
-  }
+//     .icon-pressed {
+//       display: none;
+//     }
+//   }
 
-  &[aria-pressed='true'] {
-    .icon {
-      display: none;
-    }
+//   &[aria-pressed='true'] {
+//     .icon {
+//       display: none;
+//     }
 
-    .icon-pressed {
-      display: inline-block;
-    }
-  }
-}
+//     .icon-pressed {
+//       display: inline-block;
+//     }
+//   }
+// }
 
 @mixin next() {
   @if direction.$direction == 'ltr' {

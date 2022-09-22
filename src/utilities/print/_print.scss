@@ -1,0 +1,11 @@
+/**
+ * Print
+ */
+
+// Dependencies
+@use 'config/print';
+
+// Declarations
+.print {
+  @include print.base();
+}

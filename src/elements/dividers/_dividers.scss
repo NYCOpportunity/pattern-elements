@@ -7,6 +7,15 @@
 @use 'config/media';
 
 // Declarations
-@include media.screens-and-min-width() using ($variant) {
-  @include divider.dividers($variant);
+hr, .divider, .divider-large {
+  @include divider.base();
 }
+
+.divider-large {
+  margin-top: calc(var(--nyco-typography-margin-bottom) * 2.5);
+  margin-bottom: calc(var(--nyco-typography-margin-bottom) * 2.5);
+}
+
+// @include media.screens-and-min-width() using ($variant) {
+//   @include divider.dividers($variant);
+// }

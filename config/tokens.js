@@ -85,7 +85,7 @@ const color = {
   'scale-4': 'var(--nyco-scale-4)'
 };
 
-const colorTokens = {
+const dark = {
   'text': 'var(--nyco-color-white)',
   'brand': 'var(--nyco-color-blue-l-2)',
   'alt': 'var(--nyco-color-blue-l-3)',
@@ -106,8 +106,9 @@ const colorTokens = {
 
   'background': 'var(--nyco-scale-1)',
 
-  'webkit-font-smoothing': 'antialiased', // true
-  'moz-osx-font-smoothing': 'grayscale', // true
+  // 'font-smooth': 'always',             // non-standard & not on standards track
+  'webkit-font-smoothing': 'antialiased', // always
+  'moz-osx-font-smoothing': 'grayscale',  // always
 
   'scale': {
     '0': 'var(--nyco-color-default-0)',
@@ -213,12 +214,14 @@ const colorTokens = {
     'link': 'var(--nyco-color-blue-l-3)',
     'background': 'var(--nyco-color-default-2)',
     'border': 'var(--nyco-color-transparent)',
-    'webkit-font-smoothing': 'antialiased', // true
-    'moz-osx-font-smoothing': 'grayscale' // true
+
+    // 'font-smooth': 'always',             // non-standard & not on standards track
+    'webkit-font-smoothing': 'antialiased', // always
+    'moz-osx-font-smoothing': 'grayscale'   // always
   }
 };
 
-const light = merge(colorTokens, {
+const light = merge(dark, {
   'text': 'var(--nyco-color-default-3)',
   'brand': 'var(--nyco-color-blue)',
   'alt': 'var(--nyco-text)',
@@ -231,7 +234,7 @@ const light = merge(colorTokens, {
 
   'link': 'var(--nyco-color-blue)',
   'link-hover': 'var(--nyco-text)',
-  // 'link-visited': 'var(--nyco-color-purple)',
+  'link-visited': 'var(--nyco-color-purple)',
   'link-visited': 'var(--nyco-text)',
 
   'focus': 'var(--nyco-color-blue)',
@@ -239,8 +242,9 @@ const light = merge(colorTokens, {
 
   'background': 'var(--nyco-scale-1)',
 
-  'webkit-font-smoothing': 'auto',  // false
-  'moz-osx-font-smoothing': 'auto', // false
+  // 'font-smooth': 'auto',         // browser default, non-standard & not on standards track
+  'webkit-font-smoothing': 'auto',  // browser default
+  'moz-osx-font-smoothing': 'auto', // browser default
 
   'scale': {
     '0': 'var(--nyco-color-light-0)',
@@ -340,11 +344,11 @@ module.exports = {
     'ar',
     'ur'
   ],
+  'fontFace-code': 'monospace',
   'fontFace-system': 'ui-sans-serif, system-ui, sans-serif',
   'fontFace-nyc': '\'Helvetica Neue Pro\', \'Helvetica Neue\', Helvetica, Arial, sans-serif',
   'fontFace-primary': '\'Public Sans\', sans-serif',
   'fontFace-secondary': '\'Public Sans\', sans-serif',
-  'fontFace-code': 'monospace',
   'fontFamily': {
     'body': 'var(--nyco-fontFace-secondary)',
     'h1': 'var(--nyco-fontFace-primary)',
@@ -360,6 +364,8 @@ module.exports = {
     'option': 'var(--nyco-fontFace-secondary)',
     'question': 'var(--nyco-fontFace-secondary)',
     'code': 'var(--nyco-fontFace-code)',
+    'system': 'var(--nyco-fontFace-system)',
+    'nyc': 'var(--nyco-fontFace-nyc)',
     'primary': 'var(--nyco-fontFace-primary)',
     'secondary': 'var(--nyco-fontFace-secondary)',
     'inherit': 'inherit',
@@ -432,7 +438,7 @@ module.exports = {
     'p': '1.6',
     'small': 'normal',
     'button': 'normal',
-    'tables': 'normal',
+    'tables': '1.6',
     'option': 'normal',
     'question': 'normal',
     'code': '1.9'
@@ -452,7 +458,7 @@ module.exports = {
   'color': color,
   'colorMode': {
     'dark': {
-      ...colorTokens,
+      ...dark,
       'shadow': {
         'up': shadow['up-dark']
       }
@@ -468,9 +474,9 @@ module.exports = {
     'desktop': '1112px', // Set minimum width for devices.
     'tablet': '768px',
     'mobile': '480px',
-    'small': '400px',
-    'max-width-offset': '0.02px' // There is a max width mixin but its is discouraged over min width
+    'small': '400px'
   },
+  'screen-max-width-offset': '0.02px', // There is a max width mixin but its is discouraged over min width
   'grid': grid,
   'dimension': {
     'auto': 'auto',
@@ -529,10 +535,8 @@ module.exports = {
     '8': [spacing['8'], spacing['8']],
     'logo-google-translate': ['175px', '16px'],
     'logo-standard-menu-item': ['130px', '18px'],
-    'logo-homepage': ['186px', '18px'],
     'logo-stacked-menu-item': ['100px', '32px'],
     'logo-nyco-menu-item': ['150px', '17px'],
-    'logo-partnership-footer': ['206px', '80px'],
     'logo-nyc-copyright': ['41px', '15px']
   },
   'focus': {

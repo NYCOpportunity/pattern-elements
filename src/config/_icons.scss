@@ -47,7 +47,7 @@ $sizes: map-get($tokens, 'iconSize');
 }
 
 @mixin ui {
-  [class*='icon-wnyc-ui'] {
+  [class*='icon-ui'] {
     stroke: currentColor;
     stroke-width: 2;
     stroke-linecap: round;
@@ -62,7 +62,7 @@ $sizes: map-get($tokens, 'iconSize');
 
 @mixin subway {
   [class*='icon-subway'] {
-    color: $color-white;
+    color: #FFFFFF;
     font-size: 65%;
     font-family: helvetica, arial, sans-serif;
     font-weight: bold;

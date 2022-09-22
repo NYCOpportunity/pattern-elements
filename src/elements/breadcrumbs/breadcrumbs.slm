@@ -1,0 +1,12 @@
+nav class='breadcrumbs' aria-label='Breadcrumb'
+  a href='${this.baseUrl}/demos/index' Home
+
+  svg class='breadcrumbs__chevron icon-ui rtl:flip' aria-hidden='true'
+    use href='#feather-chevron-right'
+
+  a href='#' Elements
+
+  svg class='breadcrumbs__chevron icon-ui rtl:flip' aria-hidden='true'
+    use href='#feather-chevron-right'
+
+  b aria-current='page' Breadcrumb

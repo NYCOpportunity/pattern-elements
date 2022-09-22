@@ -22,7 +22,8 @@ div class='select ${this.select.class}'
     - for (let i in this.select.options)
       - option = this.select.options[i];
       - value = (option.value) ? option.value : this.createSlug(option.label)
+
       option value='${value}' = option.label
 
   svg class='select__graphic' aria-hidden='true'
-    use href='#select-wnyc-chevrons'
+    use href='#select-nyco-chevrons'

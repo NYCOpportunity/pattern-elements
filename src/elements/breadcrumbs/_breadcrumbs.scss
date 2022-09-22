@@ -1,0 +1,15 @@
+@use 'config/typography';
+
+.breadcrumbs {
+  @include typography.set('small');
+
+  margin-top: 0;
+  margin-bottom: var(--nyco-typography-margin-bottom);
+}
+
+.breadcrumbs__chevron {
+  width: calc(var(--nyco-grid) * 2);
+  height: calc(var(--nyco-grid) * 2);
+
+  vertical-align: middle;
+}

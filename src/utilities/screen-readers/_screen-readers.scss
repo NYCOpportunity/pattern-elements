@@ -1,0 +1,11 @@
+/**
+ * Screen Readers
+ */
+
+// Dependencies
+@use 'config/screen-readers';
+
+// Declarations
+.sr-only {
+  @include screen-readers.only
+}

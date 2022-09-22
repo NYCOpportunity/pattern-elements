@@ -7,6 +7,7 @@
 
 // Configuration
 $screens: map-get($tokens, 'screen');
+$screen-max-width-offset: map-get($tokens, 'screen-max-width-offset');
 
 /**
  * Get a token value from the media set
@@ -30,7 +31,7 @@ $screens: map-get($tokens, 'screen');
   $value: get($token);
 
   @if $sub == true {
-    $value: get($token) - get('max-width-offset');
+    $value: get($token) - $screen-max-width-offset;
   }
 
   @media screen and (max-width: $value) {

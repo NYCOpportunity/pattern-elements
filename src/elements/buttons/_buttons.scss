@@ -19,7 +19,7 @@ button {
 
 .btn, [class*='btn-'] {
   @include buttons.base;
-  @include buttons.icon-toggle();
+  // @include buttons.icon-toggle();
 }
 
 @mixin buttons($variant: '') {
