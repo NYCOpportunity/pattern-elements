@@ -84,6 +84,7 @@
 
   button, .btn {
     display: flex;
+    margin-top: calc(var(--nyco-grid) * 2);
     margin-bottom: calc(var(--nyco-grid) * 2);
     width: 100%;
 

@@ -2,7 +2,7 @@ The Badges in the Opportunity Standard focus attention on timely or essential co
 
 ---
 
-Other elements, such as span may also be used. However, the badge is never an interactive element such as a link or button.
+Other elements, such as `span`, may also be used. However, the badge is never an interactive element such as a link or button.
 
 ---
 

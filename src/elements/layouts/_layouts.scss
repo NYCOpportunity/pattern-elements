@@ -34,15 +34,12 @@
   @include layouts.page-max-selector($variant);
   @include layouts.page-min-max-selector($variant);
 
-  // @include layouts.rows-selector($variant);
-  // @include layouts.rows-gutter-selector($variant);
+  @include layouts.sidebar-selector($variant);
+  @include layouts.sidebar-small-selector($variant);
 
-  // @include layouts.sidebar-selector($variant);
-  // @include layouts.sidebar-small-selector($variant);
-  // @include layouts.sidebar-gutter-selector($variant);
-  // @include layouts.sidebar-small-gutter-selector($variant);
   @include layouts.content-selector($variant);
-  // @include layouts.topbar-selector($variant);
+
+  @include layouts.topbar-selector($variant);
 }
 
 .print {

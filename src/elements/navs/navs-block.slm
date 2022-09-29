@@ -2,10 +2,14 @@
 / Nav Block
 /
 nav class='nav-block'
-  a class='active' href='#' Am I eligible?
+  a href='#' Am I eligible?
+
   a href='#' Programs
+
   a href='#' Find help
-  a class='no-underline' href='#search'
-    svg class='icon icon-wnyc-ui-search'
-      use xlink:href='#feather-search'
-    | Search
+
+  button class='link-icon'
+    svg class='icon icon-ui'
+      use href='#feather-search'
+
+    span Search

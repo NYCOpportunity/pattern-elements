@@ -98,8 +98,8 @@ const dark = {
 
   'link': 'var(--nyco-color-blue-l-2)',
   'link-hover': 'var(--nyco-color-blue-l-3)',
-  'link-visited': 'var(--nyco-color-purple-l-2)',
-  'link-visited': 'var(--nyco-color-blue-l-3)',
+  // 'link-visited': 'var(--nyco-color-purple-l-2)',
+  'link-visited': 'inherit',
 
   'focus': 'var(--nyco-color-blue-l-2)',
   'focus-background': 'var(--nyco-background)',
@@ -234,8 +234,8 @@ const light = merge(dark, {
 
   'link': 'var(--nyco-color-blue)',
   'link-hover': 'var(--nyco-text)',
-  'link-visited': 'var(--nyco-color-purple)',
-  'link-visited': 'var(--nyco-text)',
+  // 'link-visited': 'var(--nyco-color-purple)',
+  'link-visited': 'inherit',
 
   'focus': 'var(--nyco-color-blue)',
   'focus-background': 'var(--nyco-background)',

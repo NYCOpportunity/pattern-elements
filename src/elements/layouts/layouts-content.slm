@@ -1,0 +1,7 @@
+/! { The "w-full bg-yellow-l-2" class is used for demonstration purposes only }
+div class='layout-content page-max w-full bg-yellow-l-2'
+  /! { The "bg-green-l-4" class is used for demonstration purposes only }
+  div class='wrap bg-green-l-4'
+    /! { The div element and "bg-scale-4" class are used for demonstration purposes only }
+    div class='bg-scale-4'
+      | There are over 30 programs you or your family may be eligible for regardless of immigration status and even if you’re already receiving benefits or have a job.

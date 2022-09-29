@@ -2,21 +2,21 @@ form
   div class='fieldset'
     label class='label' Input
 
-    = partial('/elements/inputs/inputs')
+    = partial('../inputs/inputs')
 
   div class='fieldset'
     label class='legend' Select
 
-    = partial('/elements/selects/selects')
+    = partial('../selects/selects')
 
   fieldset
     legend True or False
 
     - option = {type: 'radio', label: 'True', name: 'boolean'}
-    = partial('/elements/options/options')
+    = partial('../options/options')
 
     - option = {type: 'radio', label: 'False', name: 'boolean'}
-    = partial('/elements/options/options')
+    = partial('../options/options')
 
   button class='btn btn-primary' type='submit'
     span Submit

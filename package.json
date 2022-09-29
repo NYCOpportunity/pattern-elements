@@ -17,5 +17,8 @@
     "deepmerge": "^4.2.2",
     "postcss": "^8.3.11",
     "tailwindcss-logical": "^3.0.0"
+  },
+  "dependencies": {
+    "@nycopportunity/pattern-elements": "^0.0.0-2"
   }
 }

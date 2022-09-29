@@ -1,0 +1,9 @@
+/
+/ External Links
+/
+
+a href='https://access.nyc.gov/programs/supplemental-nutrition-assistance-program-snap/' class='link-icon' target='_blank' rel='nofollow noopener'
+  span Learn more about Supplemental Nutrition Assistance Program (SNAP)
+
+  svg class='icon icon-ui'
+    use href='#feather-external-link'

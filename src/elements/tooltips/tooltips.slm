@@ -1,7 +1,7 @@
 p
   button type='button' class='c-question__info btn-text btn-link' data-js='tooltip' aria-describedby='aria-db-tooltip-age'
     svg class='icon-2' aria-hidden='true'
-      use xlink:href='#icon-info'
+      use href='#icon-info'
     | Here’s why we are asking.
 
 div id='aria-db-tooltip-age' class='tooltip color-info-status animated fadeInUp'
