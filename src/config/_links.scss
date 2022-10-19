@@ -9,7 +9,7 @@
 @mixin base() {
   color: var(--nyco-link);
   font-weight: var(--nyco-fontWeight-link);
-  text-decoration: underline;
+  text-decoration: var(--nyco-textDecoration-link);
 
   // &[href^='#']:visited {
   //   color: var(--nyco-link);

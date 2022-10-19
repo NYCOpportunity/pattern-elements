@@ -72,7 +72,6 @@ iframe {
   width: 99999px;
   max-width: 100%;
   border: none;
-  aspect-ratio: 16 / 9;
 }
 
 @include media.print() {

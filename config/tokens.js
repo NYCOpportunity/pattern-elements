@@ -443,6 +443,9 @@ module.exports = {
     'question': 'normal',
     'code': '1.9'
   },
+  'textDecoration': {
+    'link': 'underline'
+  },
   'typography': {
     'small': '16px',
     'mobile': '18px',

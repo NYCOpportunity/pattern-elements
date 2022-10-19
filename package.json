@@ -1,6 +1,6 @@
 {
   "name": "@nycopportunity/pattern-elements",
-  "version": "0.0.0-2",
+  "version": "0.0.0-3",
   "description": "Shared elements for the NYC Opportunity UI Patterns Framework.",
   "scripts": {
     "_start": "cross-env NODE_ENV=development concurrently \"pttrn -w\" \"pttrn serve -w\" -p \"none\"",

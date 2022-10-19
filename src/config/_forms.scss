@@ -12,19 +12,27 @@ $fieldset-margin-bottom: calc(var(--nyco-grid) * 5);
 }
 
 @mixin element-reset() {
+  appearance: none;
+
   color: inherit;
   font-family: inherit;
   font-size: inherit;
+  font-weight: inherit;
   line-height: initial;
-  appearance: none;
+  text-decoration: inherit;
+
+  background-color: transparent;
   border: none;
   border-radius: 0;
+
   display: block;
-  max-width: 100%;
-  // min-width: 100%;
-  // width: 200px;
-  min-width: 200px;
-  width: 100%;
   margin: 0;
+  width: 100%;
+  max-width: 100%;
+
+  // width: 200px;
+  // min-width: 100%;
+  // min-width: 200px; // historical
+
   cursor: pointer;
 }
