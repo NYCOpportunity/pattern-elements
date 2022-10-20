@@ -10,6 +10,6 @@ nav class='nav-block'
 
   button class='link-icon'
     svg class='icon icon-ui'
-      use href='#feather-search'
+      use href='#lucide-search'
 
     span Search

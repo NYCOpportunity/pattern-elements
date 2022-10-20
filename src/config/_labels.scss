@@ -3,7 +3,7 @@
 //
 
 // Dependencies
-// @import ...
+@use 'config/icons';
 
 // Declarations
 $margin-bottom: var(--nyco-grid);
@@ -13,4 +13,6 @@ $margin-bottom: var(--nyco-grid);
   display: inline-block;
   vertical-align: top;
   margin-bottom: $margin-bottom;
+
+  @include icons.spacing;
 }

@@ -42,7 +42,8 @@ body {
 svg,
 use,
 a > *,
-button > * {
+button > *,
+label > * {
   pointer-events: none;
 }
 
