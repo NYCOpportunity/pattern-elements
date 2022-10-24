@@ -1,17 +1,18 @@
 / Input Search
 
 - this.inputSearch = {}
+- this.inputSearch.id = this.createId()
 - this.inputSearch.tabindex = false
 
 / Inherit overrides
 - if (typeof inputSearch !== 'undefined')
   - this.inputSearch = Object.assign(this.inputSearch, inputSearch);
 
-div class='input-search'
+div class='input input-search'
   /! { @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }
-  input name='s' value='' placeholder='Search' data-js='search__input' id='search-field' type='text' tabindex=this.inputSearch.tabindex
+  input type='text' name='s' value='' placeholder='Search' data-js='search__input' id='${this.inputSearch.id}' tabindex=this.inputSearch.tabindex
 
   /! { @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }
   button class='input-search__submit' type='submit' tabindex=this.inputSearch.tabindex
-    svg class='icon-ui icon-4'
+    svg class='icon-ui'
       use href='#lucide-search'
