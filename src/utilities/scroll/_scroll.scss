@@ -23,9 +23,9 @@
 
 .scroll-peek {
   > * {
-    min-width: 88%;
-    max-width: 88%;
-    flex-basis: 88%;
+    min-width: var(--nyco-scroll-peek-column-width);
+    max-width: var(--nyco-scroll-peek-column-width);
+    flex-basis: var(--nyco-scroll-peek-column-width);
   }
 }
 

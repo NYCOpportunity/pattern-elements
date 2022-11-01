@@ -487,9 +487,10 @@ module.exports = {
     'half': '50%',
     '90vh': '90vh',
     '100vh': '100vh',
-    'content-width': 'calc(var(--nyco-grid) * 112)',    // '896px',
-    'site-max-width': 'calc(var(--nyco-grid) * 180)',   // '1440px',
-    'site-min-width': 'calc(var(--nyco-grid) * 40)',    // '320px',
+    'content-width': 'calc(var(--nyco-grid) * 112)',  // '896px',
+    'site-max-width': 'calc(var(--nyco-grid) * 180)', // '1440px',
+    'site-min-width': 'calc(var(--nyco-grid) * 40)',  // '320px',
+    'scroll-peek-column-width': '88%'
   },
   'z': {
     '0': 0,
