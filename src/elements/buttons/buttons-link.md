@@ -1,1 +1,0 @@
-The Link Button Element appears as a hyperlink but because it is marked up as a button element, assistive technologies will convey interactions as they would for buttons.

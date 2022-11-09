@@ -1,6 +1,0 @@
-/
-/ Tag Button
-/
-
-button type='button' class='btn-primary btn-tag'
-  | Tag

@@ -3,11 +3,11 @@
 /
 
 div class='layout-content w-full'
-  div
-    button#btn-toggle type='button' class='btn-toggle btn-primary w-full mb-2' data-js='toggle' aria-controls='btn-toggle-target' aria-expanded='true'
+  div class='wrap'
+    button type='button' class='btn-toggle w-full mb-2' data-js='toggle' aria-controls='btn-toggle-target' aria-expanded='true'
       span Toggle Button
 
-      svg class='icon-ui icon-4' aria-hidden='true'
+      svg class='icon-ui' aria-hidden='true'
         use href='#lucide-chevron-down'
 
-    div#btn-toggle-target class='bg-scale-1 p-4 text-center active' aria-hidden='false' Toggle button target element area
+    div#btn-toggle-target class='bg-scale-2 p-4 text-center active' aria-hidden='false' Toggle button target element area

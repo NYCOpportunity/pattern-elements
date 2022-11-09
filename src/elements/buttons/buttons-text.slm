@@ -1,6 +1,0 @@
-/
-/ Text Button
-/
-
-button type='button' class='btn-text'
-  | Plain Text Button

@@ -5,25 +5,46 @@
 - this.button.class = 'btn-primary'
 - this.button.label = 'Button'
 - this.button.href = false
+- this.button.external = false
 - this.button.tabindex = false
 - this.button.type = false
+- this.button.prefix = false
+- this.button.postfix = false
 
 / Inherit overrides
 - if (typeof button !== 'undefined')
   - this.button = Object.assign(this.button, button);
 
+/ Hyperlink tag buttons
 - if (this.button.href)
   - if (this.button.type)
     = partial(`buttons-${this.button.type}`)
 
   - else
-    a class='btn ${this.button.class}' tabindex=this.button.tabindex href=this.button.href
+    a class='btn ${this.button.class}' tabindex=this.button.tabindex href=this.button.href target=(this.button.external)?'_blank':false rel=(this.button.external)?'noopener':false
+      - if this.button.prefix
+        svg class='icon-ui rtl:flip' aria-hidden='true' tabindex=this.button.tabindex
+          use href='#lucide-${this.button.prefix}'
+
       span = this.button.label
 
+      - if this.button.postfix
+        svg class='icon-ui rtl:flip' aria-hidden='true' tabindex=this.button.tabindex
+          use href='#lucide-${this.button.postfix}'
+
+/ Button element buttons
 - else
   - if (this.button.type)
     = partial(`buttons-${this.button.type}`)
 
   - else
     button class='${this.button.class}' tabindex=this.button.tabindex type='button'
+      - if this.button.prefix
+        svg class='icon-ui rtl:flip' aria-hidden='true' tabindex=this.button.tabindex
+          use href='#lucide-${this.button.prefix}'
+
       span = this.button.label
+
+      - if this.button.postfix
+        svg class='icon-ui rtl:flip' aria-hidden='true' tabindex=this.button.tabindex
+          use href='#lucide-${this.button.postfix}'

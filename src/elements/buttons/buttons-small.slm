@@ -1,6 +1,0 @@
-/
-/ Small Button
-/
-
-button type='button' class='btn-primary btn-small'
-  | Small Button
