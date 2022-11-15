@@ -25,13 +25,14 @@
 /** Elements - end */
 
 /** Utilities */
-@forward 'utilities/animate/animate';
-@forward 'utilities/cell/cell';
-@forward 'utilities/clearfix/clearfix';
-@forward 'utilities/direction/direction';
-@forward 'utilities/print/print';
-@forward 'utilities/screen-readers/screen-readers'; // tailwindcss includes this utility but it is used by many element and components so it should be included
-@forward 'utilities/scroll/scroll';
-@forward 'utilities/status/status';
-@forward 'utilities/toggle/toggle';
+@forward 'utilities/animate/_animate.scss';
+@forward 'utilities/cell/_cell.scss';
+@forward 'utilities/clearfix/_clearfix.scss';
+@forward 'utilities/direction/_direction.scss';
+@forward 'utilities/print/_print.scss';
+@forward 'utilities/screen-readers/_screen-readers.scss'; // tailwindcss includes this utility but it is used by many element and components so it should be included
+@forward 'utilities/scroll/_scroll.scss';
+@forward 'utilities/status/_status.scss';
+@forward 'utilities/tabindex/_tabindex.scss';
+@forward 'utilities/toggle/_toggle.scss';
 /** Utilities - end */

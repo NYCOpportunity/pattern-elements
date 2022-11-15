@@ -17,18 +17,10 @@
   outline-color: var(--nyco-focus);
 }
 
-// input:focus + .opt__base {
 @mixin focus() {
   @include blurred();
 
   &:focus {
     @include focused()
   }
-
-  // outline: none;
-  // box-shadow: 0 0 0 var(--nyco-focus-width) var(--nyco-focus);
-
-  // outline: none;
-  // box-shadow: 0 0 0 var(--nyco-focus-gap) var(--nyco-focus-background),
-              // 0 0 0 calc(var(--nyco-focus-gap) + var(--nyco-focus-width)) var(--nyco-focus);
 }

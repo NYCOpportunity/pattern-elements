@@ -1,0 +1,11 @@
+/**
+ * Tabindex
+ */
+
+// Dependencies
+@use 'config/interaction';
+
+// Declarations
+[tabindex='0'], [tabindex='-1'] {
+  @include interaction.focus();
+}
