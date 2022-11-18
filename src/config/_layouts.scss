@@ -336,7 +336,8 @@ $layouts: map-get(tokens.$tokens, 'layouts');
       right: 0;
       height: 100%;
       overflow: scroll;
-      -webkit-overflow-scrolling: touch
+
+      overflow-scrolling: touch
     }
   }
 
