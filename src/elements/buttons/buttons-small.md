@@ -1,1 +1,1 @@
-The small button modifier will decrease any button font size to .727rem.
+The Small Button is available when the standard button size is too large. It will remain smaller than other standard buttons in all viewports.

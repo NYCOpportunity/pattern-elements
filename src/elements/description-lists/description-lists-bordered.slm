@@ -1,17 +1,22 @@
 / Description List Bordered
 
-dl class='description-list description-list-bordered'
-  dt Status
+dl class='description-list-bordered'
+  dt
+    b Status
   dd Active
 
-  dt Owner
+  dt
+    b Owner
   dd The Mayor's Office of Information Privacy
 
-  dt Partner Agencies
+  dt
+    b Partner Agencies
   dd Department of Homeless Services, Human Resources Administration, Administration for Child Services
 
-  dt Data Coverage
+  dt
+    b Data Coverage
   dd 1/9/2010 - Current
 
-  dt Agreement History
+  dt
+    b Agreement History
   dd 1/9/2010 - Current

@@ -1,0 +1,2 @@
+- button = {class: 'btn', label: 'Share this page', prefix: 'share-2'}
+= partial('buttons.slm')

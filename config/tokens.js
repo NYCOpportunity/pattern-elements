@@ -40,12 +40,12 @@ const color = {
   'blue-l-2': '#53B3FC',
   'blue-l-3': '#C9EEFE',
 
+  'green-d-2': '#006333',
   'green-d-1': '#007539',
-  'green': '#006333',
-  'green-l-1': '#008E46',
-  'green-l-2': '#4BAC4C',
-  'green-l-3': '#A8DD7C',
-  'green-l-4': '#DFEED2',
+  'green': '#008E46',
+  'green-l-1': '#4BAC4C',
+  'green-l-2': '#A8DD7C',
+  'green-l-3': '#DFEED2',
 
   'yellow-d-4': '#5C3D00',
   'yellow-d-3': '#8F5F00',
@@ -71,6 +71,7 @@ const color = {
   'inherit': 'inherit',
 
   'text': 'var(--nyco-text)',
+  'background': 'var(--nyco-background)',
   'brand': 'var(--nyco-brand)',
   'alt': 'var(--nyco-alt)',
   'em': 'var(--nyco-em)',
@@ -92,9 +93,10 @@ const dark = {
   'em': 'var(--nyco-color-yellow-l-2)',
   'error': 'var(--nyco-color-yellow-l-2)',
 
-  'primary': 'var(--nyco-color-blue-l-1)',
+  // 'primary': 'var(--nyco-color-blue-l-1)',
+  'primary': 'var(--nyco-color-blue-l-2)',
   'secondary': 'var(--nyco-color-green-l-3)',
-  'tertiary': 'var(--nyco-color-yellow-l-2)',
+  'tertiary': 'var(--nyco-color-yellow-l-1)',
 
   'link': 'var(--nyco-color-blue-l-2)',
   'link-hover': 'var(--nyco-color-blue-l-3)',
@@ -283,7 +285,7 @@ const light = merge(dark, {
     },
     'secondary': {
       'text': 'var(--nyco-text)',
-      'background': 'var(--nyco-color-green-l-4)',
+      'background': 'var(--nyco-color-green-l-3)',
     },
     'tertiary': {
       'text': 'var(--nyco-text)',

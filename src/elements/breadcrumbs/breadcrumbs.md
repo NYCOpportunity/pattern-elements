@@ -1,0 +1,1 @@
+The Breadcrumb is a navigation element that showcases where the user is on a website and allows them to navigate back to parent pages quickly. It is the same as the <a href="https://designsystem.digital.gov/components/breadcrumb/" target="_blank" rel="noopener">Breadcrumb Component in the U.S. Web Design System (USWDS)</a> and follows the same usage guidelines.

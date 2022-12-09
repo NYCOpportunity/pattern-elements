@@ -2,12 +2,12 @@
 / Disabled Button
 /
 
-div class='grid grid-cols-3 gap-3'
-  button type='button' disabled=true
+div class='grid gap-3'
+  button disabled=true
     | Disabled Default Button
 
-  button class='btn' type='button' disabled=true
+  button class='btn' disabled=true
     | Disabled Styled Button
 
-  button class='btn btn-primary' type='button' disabled=true
+  button class='btn btn-primary' disabled=true
     | Disabled Primary Button

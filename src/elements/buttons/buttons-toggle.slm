@@ -4,10 +4,23 @@
 
 div class='layout-content w-full'
   div class='wrap'
-    button type='button' class='btn-toggle w-full mb-2' data-js='toggle' aria-controls='btn-toggle-target' aria-expanded='true'
+    /! {! @class          "active" or "inactive" indicates the state of the toggle the element visually }
+    /! {! @data-js        "toggle" adds the toggleing utility to the button }
+    /! {! @aria-controls  Designates the target of the toggle by its ID }
+    /! {! @aria-expanded  Indicates the toggled state of the target }
+    button class='btn-toggle w-full mb-2 active' data-js='toggle' aria-controls='ac-toggle-button-target' aria-expanded='true'
       span Toggle Button
 
+      /! { @aria-hidden  Hides the non-critical icon from assistive technology }
       svg class='icon-ui' aria-hidden='true'
         use href='#lucide-chevron-down'
 
-    div#btn-toggle-target class='bg-scale-2 p-4 text-center active' aria-hidden='false' Toggle button target element area
+    /! {! @id             Indicates the ID of the element and must match the @aria-controls attribute }
+    /! {! @class          "active" or "inactive" shows and hides the element visually, respectively }
+    /! {! @aria-expanded  Hides content in the element from assistive technology }
+    div#ac-toggle-button-target class='bg-scale-2 p-4 text-center active' aria-hidden='false'
+      p
+        | Toggle button target element area.
+
+        /! { @tabindex  "-1" removes this link from the tabbing order when the parent's aria-hidden attribute is set to "true" }
+        a href='#' Target element link

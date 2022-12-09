@@ -1,1 +1,1 @@
-Tag Button Elements are associated with related programs. Clicking on a tag should bring up the programs page filtered to the appropriate tag.
+The Tag Button is a link button used for linking from one piece of categorized content to another category. Clicking on it should typically reveal more content categorized by the label.

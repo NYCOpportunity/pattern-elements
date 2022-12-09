@@ -1,0 +1,26 @@
+div class='code-block'
+  /! { @tabindex  "0" adds the element to the tabbing order }
+  pre tabindex='0'
+    = '<!DOCTYPE html>\n';
+    = '<html dir="ltr" lang="en">\n';
+    = '  <head>\n';
+    = '    <style>\n';
+    = '      /** CSS */\n';
+    = '      body {\n';
+    = '        visibility: hidden;\n';
+    = '      }\n';
+    = '    </style>\n\n';
+    = '    <script>\n';
+    = '      // JavaScript\n';
+
+    = '      function load() {\n'
+    = '        document.body.style.visibility = "visible"\n'
+    = '      };\n'
+
+    = '    </script>\n';
+    = '  </head>\n\n';
+    = '  <body>\n';
+    = `    <h1>${this.package.nice}</h1>\n`;
+    = `    <p>${this.package.description}</p>\n`;
+    = '  </body>\n';
+    = '</html>\n';

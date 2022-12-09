@@ -1,12 +1,18 @@
+/! { @aria-label  The value "Breadcrumb" is a common term as well as designates this navigation element as unique }
 nav class='breadcrumbs' aria-label='Breadcrumb'
   a href='${this.baseUrl}/demos/index' Home
 
+  /! { @class        "rtl:flip" changes the orientation of the chevron icon based on the reading direction of the page }
+  /! { @aria-hidden  "true" removes this non-critical icon from screen reader view }
   svg class='breadcrumbs__chevron icon-ui rtl:flip' aria-hidden='true'
     use href='#lucide-chevron-right'
 
   a href='#' Elements
 
+  /! { @class        "rtl:flip" changes the orientation of the chevron icon based on the reading direction of the page }
+  /! { @aria-hidden  "true" removes this non-critical icon from screen reader view }
   svg class='breadcrumbs__chevron icon-ui rtl:flip' aria-hidden='true'
     use href='#lucide-chevron-right'
 
+  /! { @aria-current  "page" designates this label as the current page of the navigation }
   b aria-current='page' Breadcrumb

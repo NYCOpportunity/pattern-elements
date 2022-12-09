@@ -1,0 +1,2 @@
+- button = {class: 'btn-tag', label: 'Tag Button'}
+= partial('buttons.slm')

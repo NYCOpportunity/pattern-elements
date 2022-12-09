@@ -1,0 +1,6 @@
+div class='grid gap-3'
+  - button = {class: 'btn', label: 'Learn more about links', href: '/links', postfix: 'arrow-right'}
+  = partial('buttons.slm')
+
+  - button = {class: 'btn', label: 'Go to designsystem.digital.gov', href: 'https://designsystem.digital.gov/components/button/', postfix: 'external-link', external: true}
+  = partial('buttons.slm')

@@ -1,0 +1,1 @@
+The base stylesheet includes all of the styles that assist in adding basic parameters to HTML elements such as `html`, `a`, `img`, `iframe`, as well as print styles.

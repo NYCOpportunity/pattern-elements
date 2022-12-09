@@ -1,0 +1,1 @@
+Code is primarily a utility for documentation, particularly for the {{ this.package.nice }} documentation site. However, it may be used in other contexts as well. Inline code is styled within `p`, `li`, `td`, `dt`, and `dd` tags.

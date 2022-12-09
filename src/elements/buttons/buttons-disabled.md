@@ -1,0 +1,1 @@
+Disabled buttons that are disabled appear inactive.

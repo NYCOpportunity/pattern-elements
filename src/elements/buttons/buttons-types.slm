@@ -1,0 +1,12 @@
+div class='grid gap-3'
+  - button = {class: 'btn', label: 'Styled Button'}
+  = partial('buttons.slm')
+
+  - button = {class: 'btn-primary', label: 'Primary Button'}
+  = partial('buttons.slm')
+
+  - button = {class: 'btn-secondary', label: 'Secondary Button'}
+  = partial('buttons.slm')
+
+  - button = {class: 'btn-tertiary', label: 'Tertiary Button'}
+  = partial('buttons.slm')

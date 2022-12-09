@@ -1,0 +1,12 @@
+div class='grid gap-3'
+  - button = {class: 'btn-small small:btn', label: 'Responsive Small Button'}
+  = partial('buttons.slm')
+
+  - button = {class: 'btn-small mobile:btn', label: 'Responsive Mobile Button'}
+  = partial('buttons.slm')
+
+  - button = {class: 'btn-small tablet:btn', label: 'Responsive Tablet Button'}
+  = partial('buttons.slm')
+
+  - button = {class: 'btn-small desktop:btn', label: 'Responsive Desktop Button'}
+  = partial('buttons.slm')
