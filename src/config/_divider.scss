@@ -24,11 +24,11 @@
 
   display: block;
   width: 100%;
-  border-bottom: 1px solid;
-  border-color: var(--nyco-scale-3);
+  border-bottom: var(--nyco-borderWidth-DEFAULT) solid;
+  border-color: var(--nyco-divider);
 
-  margin-top: calc(1rem * 1.5);
-  margin-bottom: calc(1rem * 1.5);
+  margin-top: calc(var(--nyco-typography-margin-bottom) * 1.5);
+  margin-bottom: calc(var(--nyco-typography-margin-bottom) * 1.5);
 }
 
 // @mixin dividers($variant: '') {

@@ -1,0 +1,1 @@
+The large divider, using the class `divider-large`, adds extra margin to the top an bottom.

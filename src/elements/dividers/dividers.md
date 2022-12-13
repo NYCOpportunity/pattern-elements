@@ -1,0 +1,1 @@
+The Divider is used to create a visual break between paragraph elements in a block of text.

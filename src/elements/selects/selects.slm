@@ -15,6 +15,11 @@
   - this.select = Object.assign(this.select, select);
 
 div class='select ${this.select.class}'
+  /! { @name           The data attribute for the select value when the form is serialized }
+  /! { @id             Used by the select's corresponding label "for" attribute }
+  /! { @required       "true" specifies wether a value for the select is required }
+  /! { @aria-controls  Can be used to target another element by ID and toggle it's visibility when this select has a value }
+  /! { @tabindex       Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
   select id='${this.select.id}' name='${this.select.name}' data-js=this.select.js aria-controls=this.select.ariaControls tabindex=this.select.tabindex required=this.select.required
     option value='${this.select.default.value}' selected='${this.select.default.selected}'
       = this.select.default.label
@@ -25,5 +30,6 @@ div class='select ${this.select.class}'
 
       option value='${value}' = option.label
 
-  svg class='select__graphic' aria-hidden='true'
+  /! { @tabindex   Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
+  svg class='select__graphic' aria-hidden='true' tabindex=this.select.tabindex
     use href='#select-nyco-chevrons'

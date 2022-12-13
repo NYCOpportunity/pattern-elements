@@ -87,6 +87,14 @@ const color = {
 };
 
 const dark = {
+  'scale': {
+    '0': 'var(--nyco-color-default-0)',
+    '1': 'var(--nyco-color-default-1)',
+    '2': 'var(--nyco-color-default-2)',
+    '3': 'var(--nyco-color-default-3)',
+    '4': 'var(--nyco-color-default-4)'
+  },
+
   'text': 'var(--nyco-color-white)',
   'brand': 'var(--nyco-color-blue-l-2)',
   'alt': 'var(--nyco-color-blue-l-3)',
@@ -108,17 +116,11 @@ const dark = {
 
   'background': 'var(--nyco-scale-1)',
 
+  'divider': 'var(--nyco-scale-3)',
+
   // 'font-smooth': 'always',             // non-standard & not on standards track
   'webkit-font-smoothing': 'antialiased', // always
   'moz-osx-font-smoothing': 'grayscale',  // always
-
-  'scale': {
-    '0': 'var(--nyco-color-default-0)',
-    '1': 'var(--nyco-color-default-1)',
-    '2': 'var(--nyco-color-default-2)',
-    '3': 'var(--nyco-color-default-3)',
-    '4': 'var(--nyco-color-default-4)'
-  },
 
   'input': {
     'text': 'var(--nyco-scale-1)',
@@ -224,6 +226,14 @@ const dark = {
 };
 
 const light = merge(dark, {
+  'scale': {
+    '0': 'var(--nyco-color-light-0)',
+    '1': 'var(--nyco-color-light-1)',
+    '2': 'var(--nyco-color-light-2)',
+    '3': 'var(--nyco-color-light-3)',
+    '4': 'var(--nyco-color-light-4)'
+  },
+
   'text': 'var(--nyco-color-default-3)',
   'brand': 'var(--nyco-color-blue)',
   'alt': 'var(--nyco-text)',
@@ -244,17 +254,11 @@ const light = merge(dark, {
 
   'background': 'var(--nyco-scale-1)',
 
+  'divider': 'var(--nyco-scale-3)',
+
   // 'font-smooth': 'auto',         // browser default, non-standard & not on standards track
   'webkit-font-smoothing': 'auto',  // browser default
   'moz-osx-font-smoothing': 'auto', // browser default
-
-  'scale': {
-    '0': 'var(--nyco-color-light-0)',
-    '1': 'var(--nyco-color-light-1)',
-    '2': 'var(--nyco-color-light-2)',
-    '3': 'var(--nyco-color-light-3)',
-    '4': 'var(--nyco-color-light-4)'
-  },
 
   'input': {
     'text': 'var(--nyco-color-default-1)',
@@ -516,6 +520,7 @@ module.exports = {
   'borderWidth': {
     '0': '0',
     'DEFAULT': '1px',
+    '1': '1px',
     '2': '2px',
     '3': '3px',
     '4': '4px',

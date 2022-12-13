@@ -1,22 +1,41 @@
-form
+- formId = this.createId();
+
+/! { @data-js  "validate" is the default form selector for the Global JS script }
+form data-js='validate'
   div class='fieldset'
-    label class='label' Input
+    /! { @for  Should match the ID attribute of the input }
+    label class='label' for='input-${formId}' Please fill out this field
 
-    = partial('../inputs/inputs')
+    div class='c-question__container'
+      - input = {id: `input-${formId}`, required: 'true'}
+      = partial('../inputs/inputs')
 
   div class='fieldset'
-    label class='legend' Select
+    label class='legend' Please select an item in the list
 
-    = partial('../selects/selects')
+    div class='c-question__container'
+      - select = {id: `select-${formId}`, required: 'true'}
+      = partial('../selects/selects')
 
   fieldset
-    legend True or False
+    legend Please select one of these options
 
-    - option = {type: 'radio', label: 'True', name: 'boolean'}
-    = partial('../options/options')
+    div class='c-question__container'
+      - option = {type: 'radio', label: 'True', name: 'boolean', required: 'true'}
+      = partial('../options/options')
 
-    - option = {type: 'radio', label: 'False', name: 'boolean'}
-    = partial('../options/options')
+      - option = {type: 'radio', label: 'False', name: 'boolean', required: 'true'}
+      = partial('../options/options')
 
-  button class='btn btn-primary' type='submit'
+  fieldset
+    legend Please check as many options that apply
+
+    div class='c-question__container'
+      - option = {type: 'checkbox', label: 'Option 1', name: 'optionOne', required: 'true'}
+      = partial('../options/options')
+
+      - option = {type: 'checkbox', label: 'Option 2', name: 'optionTwo', required: 'true'}
+      = partial('../options/options')
+
+  button class='btn-primary' type='submit'
     span Submit
