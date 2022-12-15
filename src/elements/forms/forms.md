@@ -1,4 +1,4 @@
-Forms in the {{ this.package.nice }} follow the usage guidelines of the <a href="https://designsystem.digital.gov/components/form-controls/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) Form Component</a>. Forms use different **Question Patterns** to gather specific pieces of information. More information about these patterns can be found on the [Question page](/question).
+Forms in the {{ this.package.nice }} follow the usage guidelines of the <a href="https://designsystem.digital.gov/components/form-controls/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) Form Component</a>. Forms use different **Question Patterns** to gather specific pieces of information. More information about these patterns can be found on the [Question page](question).
 
 ##### Validation and Accessibility
 
@@ -6,7 +6,7 @@ Proper markup and aria labeling are required for each Question. They appear simi
 
 ---
 
-[Questions](/question) use validation from the <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/forms" target="_blank" rel="nofollow">Patterns Scripts</a> utility library. This script will display visual feedback regarding missing or invalid answers and toggle appropriate `aria` attributes to announce feedback to screen readers. The `aria-live="polite"` attribute on the message declares error messages that are not visible in the default state.
+[Questions](question) use validation from the <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/forms" target="_blank" rel="nofollow">Patterns Scripts</a> utility library. This script will display visual feedback regarding missing or invalid answers and toggle appropriate `aria` attributes to announce feedback to screen readers. The `aria-live="polite"` attribute on the message declares error messages that are not visible in the default state.
 
 ---
 

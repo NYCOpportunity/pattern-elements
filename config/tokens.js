@@ -67,6 +67,17 @@ const color = {
   'black': '#000000',
   'white': '#FFFFFF',
 
+  'eighth-avenue': '#2850AD',           // Vivid Blue, A C E
+  'sixth-avenue': '#FF6319',            // Bright Orange, B D F M
+  'crosstown': '#6CBE45',               // Lime Green, G
+  'canarsie': '#A7A9AC',                // Light Slate Grey, L
+  'nassau': '#996633',                  // Terra Cotta Brown, J Z
+  'broadway': '#FCCC0A',                // Sunflower Yellow, N Q R W
+  'broadway-seventh-avenue': '#EE352E', // Tomato Red, 1 2 3
+  'lexington-avenue': '#00933C',        // Apple Green, 4 5 6 6 Express
+  'flushing': '#B933AD',                // Raspberry, 7 7 Express
+  'shuttles': '#808183',                // Dark Slate Gray, S
+
   'transparent': 'rgba(255, 255, 255, 0)',
   'inherit': 'inherit',
 
@@ -543,12 +554,7 @@ module.exports = {
     '5': [spacing['5'], spacing['5']],
     '6': [spacing['6'], spacing['6']],
     '7': [spacing['7'], spacing['7']],
-    '8': [spacing['8'], spacing['8']],
-    'logo-google-translate': ['175px', '16px'],
-    'logo-standard-menu-item': ['130px', '18px'],
-    'logo-stacked-menu-item': ['100px', '32px'],
-    'logo-nyco-menu-item': ['150px', '17px'],
-    'logo-nyc-copyright': ['41px', '15px']
+    '8': [spacing['8'], spacing['8']]
   },
   'focus': {
     'gap': '4px',

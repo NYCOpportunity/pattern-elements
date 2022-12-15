@@ -16,13 +16,13 @@ $selects: map-get(tokens.$tokens, 'selects');
 
   color: inherit;
   font-weight: bold;
-  line-height: get('inner-size');
+  line-height: var(--nyco-select-inner-size);
   text-overflow: ellipsis;
-  padding: (grid.$grid * 2) - get('border-width');
-  padding-inline-end: (grid.$grid * 5) - get('border-width');
-  border-width: get('border-width');
-  border-style: get('border-style');
-  border-radius: get('border-radius');
+  padding: calc(calc(var(--nyco-grid) * 2) - var(--nyco-select-border-width));
+  padding-inline-end: calc(calc(var(--nyco-grid) * 5) - var(--nyco-select-border-width));
+  border-width: var(--nyco-select-border-width);
+  border-style: var(--nyco-select-border-style);
+  border-radius: var(--nyco-select-border-radius);
 
   &::-ms-expand {
     display: none;
@@ -32,19 +32,19 @@ $selects: map-get(tokens.$tokens, 'selects');
 @mixin graphic() {
   fill: transparent;
   stroke: transparent;
-  stroke-width: get('stroke-width');
-  stroke-linecap: get('stroke-line');
-  stroke-linejoin: get('stroke-line');
+  stroke-width: var(--nyco-select-stroke-width);
+  stroke-linecap: var(--nyco-select-stroke-line);
+  stroke-linejoin: var(--nyco-select-stroke-line);
 
   position: absolute;
-  right: grid.$grid;
-  inset-inline-end: grid.$grid;
+  right: var(--nyco-grid);
+  inset-inline-end: var(--nyco-grid);
 
   top: 50%;
-  margin-top: -(get('inner-size'));
+  margin-top: calc(var(--nyco-select-inner-size) * -1);
 
-  width: get('inner-size');
-  height: get('inner-size') * 2;
+  width: var(--nyco-select-inner-size);
+  height: calc(var(--nyco-select-inner-size) * 2);
 
   pointer-events: none;
 }

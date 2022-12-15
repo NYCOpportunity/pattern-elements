@@ -4,6 +4,8 @@
 - this.input = {}
 - this.input.id = this.createId()
 - this.input.type = 'text'
+- this.input.prefix = false
+- this.input.suffix = false
 - this.input.tabindex = false
 - this.input.required = false
 - this.input.pattern = false
@@ -16,7 +18,11 @@
   - this.input.type = (input.type) ? input.type : this.input.type
   - this.input.name = (input.name) ? input.name : `input['${this.input.id}']`
 
-div class='input'
+  - this.input.class = 'input'
+  - this.input.class = (this.input.prefix) ? 'input-prefix' : this.input.class
+  - this.input.class = (this.input.suffix) ? 'input-suffix' : this.input.class
+
+div class='${this.input.class}'
   /! { @name      The data attribute for the input value when the form is serialized }
   /! { @id        Used by the input's corresponding label "for" attribute }
   /! { @type      Designates the type of input }
@@ -24,3 +30,25 @@ div class='input'
   /! { @pattern   A regular expression the input's value must match in order to validate }
   /! { @tabindex  Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
   input data-js=this.input.js type='${this.input.type}' class='${this.input.class}' id='${this.input.id}' name='${this.input.name}' required=this.input.required pattern=this.input.pattern tabindex=this.input.tabindex placeholder=this.input.placeholder
+
+  - if this.input.prefix
+    - if this.input.prefix.includes('#')
+      /! { @aria-hidden  "true" hides this element from screen readers }
+      /! { @tabindex  Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
+      svg class='input__prefix icon-ui' aria-hidden='true' tabindex=this.input.tabindex
+        use href='${this.input.prefix}'
+    - else
+      /! { @aria-hidden  "true" hides this element from screen readers }
+      span class='input__prefix' aria-hidden='true' = this.input.prefix
+
+  - if this.input.suffix
+    - if this.input.suffix.includes('#')
+      /! { @aria-hidden  "true" hides this element from screen readers }
+      /! { @tabindex     Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
+      svg class='input__suffix icon-ui' aria-hidden='true' tabindex=this.input.tabindex
+        use href='${this.input.suffix}'
+    - else
+      /! { @aria-hidden  "true" hides this element from screen readers }
+      span class='input__suffix' aria-hidden='true' = this.input.suffix
+
+- this.input = {}

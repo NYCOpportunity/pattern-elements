@@ -2,7 +2,7 @@
 
 ##### Global Script
 
-Forms require JavaScript for validation and accessibility. To use validation through the global script use the following code. A optional selector targeting the form may be supplied as the first argument to the `.validate()` method. The second optional argument is a function which handles the form data after it passes validation.
+Forms require JavaScript for validation and accessibility. To use validation through the global script use the following code. An optional selector targeting the form may be supplied as the first argument to the `.validate()` method. The second optional argument is a function that handles the form data after it passes validation.
 
 ```html
 <form data-js="validate" action="/my/action/" method="post">
@@ -48,7 +48,7 @@ For any of these conditions to be met...
 
 ##### Module Import
 
-The form validation source exists in the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener">Patterns Scripts</a> utility library. Install the `@nycopportunity/pttrn-scripts` module to import the module. This method allows the specification of watching for input errors on blur, setting the error container's selector, and other customizations. Refer to the the source for details.
+The form validation source exists in the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener">Patterns Scripts</a> utility library. Install the `@nycopportunity/pttrn-scripts` module to import the module. This method allows the specification of watching for input errors on blur, setting the error container's selector, and other customizations. Refer to the source for details.
 
 ```javascript
 import Forms from '@nycopportunity/patterns-scripts/src/forms/forms';

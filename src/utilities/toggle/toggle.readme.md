@@ -10,7 +10,7 @@ Attribute       | State     | Importance    | Description
 `aria-expanded` | *dynamic* | recommended   | Boolean that announces that target content is "expanded" or "collapsed" when the toggling element is clicked.
 `type`          | *static*  | recommended   | Setting a `<button>` element type to "button" will distinguish it from other button types, such as "submit" and "reset," but only within `<form>` elements. By default, a `<button>` is the type "submit" within a form.
 `aria-pressed`  | *dynamic* | optional      | Boolean that announces that the toggling element is toggled. Not recommended for use with `aria-expanded`.
-`role`          | *static*  | optional      | If the toggling element is not a `<button>` element, but looks and behaves like a button (see documentation for the [Button Element](/buttons)), then setting the `role` attribute to "button" is recommended. See [MDN documentation for the "button" role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role) for more information
+`role`          | *static*  | optional      | If the toggling element is not a `<button>` element, but looks and behaves like a button (see documentation for the [Button Element](buttons)), then setting the `role` attribute to "button" is recommended. See [MDN documentation for the "button" role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role) for more information
 
 **Target Element Attributes**
 
@@ -69,4 +69,4 @@ The ES6, CommonJS, and IFFE modules all require importing and object instantiati
 
 #### Polyfills
 
-The script uses the `Element.prototype.matches`, `Element.prototype.removes`, `Nodelist.prototype.forEach` methods which require polyfills for IE11 support. See the ["Polyfills" section in the Installation docs](/installation#polyfills) for recommendations.
+The script uses the `Element.prototype.matches`, `Element.prototype.removes`, `Nodelist.prototype.forEach` methods which require polyfills for IE11 support. See the ["Polyfills" section in the Installation docs](installation#polyfills) for recommendations.

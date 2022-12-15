@@ -1,4 +1,4 @@
-Column layouts can be achieved by using [Tailwindcss](/tailwindcss) CSS grid display and column utilities.
+Column layouts can be achieved by using [Tailwindcss](tailwindcss) CSS grid display and column utilities.
 
 * `grid` sets the display property to grid.
 

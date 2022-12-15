@@ -27,11 +27,26 @@
   @include interaction.focus();
 }
 
-@mixin icon() {
-  padding-inline-end: var(--nyco-input-icon-padding);
+@mixin graphic() {
+  font-weight: bold;
+
+  position: absolute;
+
+  width: var(--nyco-input-inner-size);
+  height: var(--nyco-input-inner-size);
+  line-height: var(--nyco-input-inner-size);
+
+  top: 50%;
+  margin-top: calc(1rem / 2 * -1);
+
+  pointer-events: none;
 }
 
-@mixin currency-icon() {
-  font-size: var(--nyco-input-currency-font-size);
-  font-weight: bold;
-}
+// @mixin icon() {
+//   padding-inline-end: var(--nyco-input-icon-padding);
+// }
+
+// @mixin currency-icon() {
+//   font-size: var(--nyco-input-currency-font-size);
+//   font-weight: bold;
+// }

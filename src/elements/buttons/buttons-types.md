@@ -10,7 +10,7 @@ The **Primary Button** is commonly used for in-page functionality. It should be 
 
 ---
 
-The **Secondary Button** is commonly used for links and call-to-actions that take users to another page. Examples can be seen in [Card](/card) and [Accordion](/accordion) components. Secondary buttons may more commonly have an [icon postfix](#link-buttons), as described below.
+The **Secondary Button** is commonly used for links and call-to-actions that take users to another page. Examples can be seen in [Card](card) and [Accordion](accordion) components. Secondary buttons may more commonly have an [icon postfix](#link-buttons), as described below.
 
 ---
 

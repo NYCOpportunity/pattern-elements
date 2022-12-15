@@ -1,0 +1,1 @@
+Inputs may have a prefix or suffix [UI Icon](icons#user-interface-ui-icons) or text following usage guidelines from the <a target="_blank" rel="noopener" href="https://designsystem.digital.gov/components/input-prefix-suffix/">U.S. Web Design System’s Input prefix or suffix</a>.

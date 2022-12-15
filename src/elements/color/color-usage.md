@@ -1,4 +1,4 @@
-Below is a general list of percentages that describe the proportional occurance of colors in the UI palette. Generally, use of color should strike a balance between neutral and vibrant colors to effectively draw attention to elements that require a user's attention.
+Below is a list of percentages that describe the proportional occurrence of colors in the UI palette. These amounts are not precise. Generally, use of color should strike a balance between neutral and vibrant colors to effectively draw attention to elements that require a user's attention.
 
 <ul class="p-0 list-none aspect-video flex mb-3">
   <li class="material h-full bg flex border-r-0" style="width: 50%">

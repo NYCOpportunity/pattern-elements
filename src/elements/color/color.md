@@ -6,4 +6,4 @@ The {{ this.package.nice }} color system is a predefined set of combinations cre
 
 * Tested through simulation to **accommodate color blindness**.
 
-There are two color palettes available for users to choose, light or dark, based on their preference (using the [theme utility](/theme)). They are both made of a **base color scale** with a split complementary set of **primary, secondary, and tertiary** colors.
+There are two color palettes available for users to choose, light or dark, based on their preference (using the [theme utility](theme)). They are both made of a **base color scale** with a split complementary set of **primary, secondary, and tertiary** colors.

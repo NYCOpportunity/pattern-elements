@@ -2,7 +2,7 @@ Badges in the {{ this.package.nice }} focus attention on timely or essential con
 
 ---
 
-Other elements, such as the `span` tag, may also be used. However, the badge is never an interactive element such as a link or button. [Tag Buttons](/buttons#tag-button) may be used for this purpose instead.
+Other elements, such as the `span` tag, may also be used. However, the badge is never an interactive element such as a link or button. [Tag Buttons](buttons#tag-button) may be used for this purpose instead.
 
 ---
 

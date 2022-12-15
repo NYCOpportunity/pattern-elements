@@ -1,6 +1,0 @@
-/
-/ Input Error
-/
-
-div class='error'
-  input type='text' aria-invalid='true'

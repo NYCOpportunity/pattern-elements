@@ -12,9 +12,9 @@
 }
 
 @include icons.ui;
-// @include icons.subway;
+@include icons.subway;
 
-// Create our responsive icon size utilty
+// Create our responsive icon size utility
 @include media.screens-and-min-width() using ($variant) {
   @include icons.sizes($variant);
 }

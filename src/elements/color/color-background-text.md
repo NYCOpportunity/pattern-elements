@@ -6,7 +6,7 @@ The **background** and **body text** are assigned initial colors with adequate c
   </div>
 </div>
 
-Additionally, there are assignments for **brand,** **alternative** and **emphasized** text colors. Each assignment is available as a CSS color utility using [Tailwindcss](/tailwindcss).
+Additionally, there are assignments for **brand,** **alternative** and **emphasized** text colors. Each assignment is available as a CSS color utility using [Tailwindcss](tailwindcss).
 
 <div class="material rounded bg mb-3">
   <div class="p-4">
@@ -26,7 +26,7 @@ Additionally, there are assignments for **brand,** **alternative** and **emphasi
 
 ##### Global Objects
 
-Global objects and other components use different background color assignments to distinguish their position or draw attention to themselves in the user interface (UI). For example, the [Navigation](/navigation), [Menu](/menu), and [Attribution](/attribution) global elements all use different background color assignments.
+Global objects and other components use different background color assignments to distinguish their position or draw attention to themselves in the user interface (UI). For example, the [Navigation](navigation), [Menu](menu), and [Attribution](attribution) global elements all use different background color assignments.
 
 <div class="flex justify-center pt-3 pb-6">
   <iframe style="width: {{ this.tokens.screen.small }}; margin: 0 auto" height="628" src="{{ this.baseUrl }}/demos/global.html" class="border-4 border-scale-3" tabindex="-1"></iframe>
@@ -34,7 +34,7 @@ Global objects and other components use different background color assignments t
 
 ##### Alerts
 
-The default, primary, secondary, and tertiary [Alerts](/alert) are assigned background and text color corresponding with their urgency.
+The default, primary, secondary, and tertiary [Alerts](alert) are assigned background and text color corresponding with their urgency.
 
 <div class="c-alert mb-3" role="region" aria-label="Additional Information">
   <div class="c-alert__graphic">
@@ -99,7 +99,7 @@ The default, primary, secondary, and tertiary [Alerts](/alert) are assigned back
 
 ##### Buttons
 
-The default, primary, secondary, and tertiary [Buttons](/buttons#button-types) are assigned background and text color corresponding with their type.
+The default, primary, secondary, and tertiary [Buttons](buttons#button-types) are assigned background and text color corresponding with their type.
 
 <div class="flex mb-3 justify-center">
   <div class="grid gap-3">
