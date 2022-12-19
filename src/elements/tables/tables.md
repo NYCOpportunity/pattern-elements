@@ -1,0 +1,1 @@
+Tables present information or data in columns an rows. They follow the usage guidelines of the <a target="_blank" rel="noopener" href="https://designsystem.digital.gov/components/table/">U.S. Web Design System’s Table Component</a>.

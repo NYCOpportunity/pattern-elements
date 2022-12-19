@@ -7,3 +7,6 @@ div class='grid gap-3'
 
   - input = {prefix: '+1', type: 'tel'}
   = partial('inputs.slm')
+
+  - input = {prefix: 'CL-', type: 'tel'}
+  = partial('inputs.slm')

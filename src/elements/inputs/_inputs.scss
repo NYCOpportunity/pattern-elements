@@ -29,7 +29,7 @@ input[type='number'] {
 }
 
 .input-prefix input {
-  padding-inline-start: calc(calc(var(--nyco-grid) * 6) - var(--nyco-input-border-width));
+  padding-inline-start: calc(calc(var(--nyco-grid) * 6.5) - var(--nyco-input-border-width));
 }
 
 .input__prefix {
@@ -40,7 +40,7 @@ input[type='number'] {
 }
 
 .input-suffix input {
-  padding-inline-end: calc(calc(var(--nyco-grid) * 6) - var(--nyco-input-border-width));
+  padding-inline-end: calc(calc(var(--nyco-grid) * 6.5) - var(--nyco-input-border-width));
 }
 
 .input__suffix {
@@ -49,30 +49,3 @@ input[type='number'] {
   right: calc(var(--nyco-grid) * 1.5);
   inset-inline-end: calc(var(--nyco-grid) * 1.5);
 }
-
-// .input-search {
-//   display: flex;
-//   align-items: center;
-//   position: relative;
-
-//   input {
-//     text-overflow: ellipsis;
-//     display: block;
-//     padding: var(--nyco-spacing-DEFAULT);
-//     width: 100%;
-//   }
-// }
-
-// .input-search__submit {
-//   width: calc(var(--nyco-grid) * 4);
-//   height: calc(var(--nyco-grid) * 4);
-//   inset-inline-end: calc(var(--nyco-grid) * 3);
-//   padding: 0 !important;
-//   position: absolute;
-
-//   > [class*="icon"]:first-child {
-//     margin: 0;
-//     width: calc(var(--nyco-grid) * 4);
-//     height: calc(var(--nyco-grid) * 4);
-//   }
-// }

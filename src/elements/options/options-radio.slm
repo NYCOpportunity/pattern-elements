@@ -1,0 +1,2 @@
+- option = {type: 'radio', label: 'Radio Option'}
+= partial('options.slm')

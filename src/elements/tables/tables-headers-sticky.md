@@ -1,0 +1,1 @@
+The Sticky Header Table enables the headers rows and columns to stick to the top or left of the page.
