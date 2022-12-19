@@ -1,6 +1,6 @@
 {
   "name": "@nycopportunity/pattern-elements",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared elements for the NYC Opportunity UI Patterns Framework.",
   "scripts": {
     "version": "git add .",

@@ -1,4 +1,8 @@
-**Inputs** in the {{ this.package.nice }} follow the usage guidelines of the <a target="_blank" rel="noopener" href="https://designsystem.digital.gov/components/text-input/">U.S. Web Design System’s Text Input</a>. Inputs should always be paired with a [Label Element](labels) using the [Question Component](question).
+**Inputs** in the {{ this.package.nice }} follow the usage guidelines of the <a target="_blank" rel="noopener" href="https://designsystem.digital.gov/components/text-input/">U.S. Web Design System’s Text Input</a>.
+
+---
+
+Inputs should always be paired with a [Label Element](labels) using the [Question Component](question).
 
 ---
 
