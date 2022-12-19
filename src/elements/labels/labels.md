@@ -1,0 +1,1 @@
+**Labels** should always be paired with an [Input Element](labels) using the [Question Component](question). The `placeholder` attribute for an input should not be used as a label.

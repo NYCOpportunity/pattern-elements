@@ -1,6 +1,18 @@
 
-div class='tablet:layout-sidebar-small layout-rows text-center'
-  aside class='bg-grey-light p-4'
-    | Sidebar
-  article class='bg-grey-lightest p-4'
-    | Content
+div class='tablet:layout-sidebar-small bg-scale-2 w-full'
+  /! { The side bar region will be ${this.tokens.dimension['sidebar-width-small']} wide for tablet viewports }
+  aside class='bg-scale-3'
+    div class='wrap py-4'
+      h6 Small sidebar region
+
+      nav aria-label='Layout Sidebar Navigation' class='nav-inline tablet:nav-block'
+        a href='#small-sidebar-layout' Nav Item
+        a href='#small-sidebar-layout' Nav Item
+        a href='#small-sidebar-layout' Nav Item
+
+  /! { The content region will occupy the rest of the layout container }
+  article class='layout-content'
+    div class='wrap py-4'
+      h6 Content region
+
+      p There are over 30 programs you or your family may be eligible for regardless of immigration status and even if you're already receiving benefits or have a job.

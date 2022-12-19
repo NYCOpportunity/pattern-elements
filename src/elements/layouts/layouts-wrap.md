@@ -1,1 +1,0 @@
-The `wrap` class adds default spacing on both sides of the container element (rendered as yellow in the demonstration below). This utility ensures a comfortable amount of window spacing for text and other elements for mobile and desktop browsers.

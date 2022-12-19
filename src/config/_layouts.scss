@@ -108,6 +108,7 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 
   max-width: var(--nyco-dimension-site-max-width);
 }
+
 @mixin page-max-selector($variant: '') {
   .#{$variant}page-max {
     @include page-max();
@@ -123,6 +124,8 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 @mixin rows-selector($variant: '') {
   .#{$variant}layout-rows,
   .#{$variant}layout-col {
+    width: 100%;
+
     @include grid(1);
   }
 }
@@ -134,6 +137,8 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 @mixin rows-gutter-selector($variant: '') {
   .#{$variant}layout-rows-gutter,
   .#{$variant}layout-col-1-gap-1 {
+    width: 100%;
+
     @include rows-gutter();
   }
 }
@@ -195,21 +200,22 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 // Special Layouts
 
 @mixin sidebar() {
+  width: 100%;
   display: flex;
   align-items: stretch;
 
   > *:first-child,
   > .layout__column:first-child {
-    width: var(--nyco-dimension-side-bar-width);
-    max-width: var(--nyco-dimension-side-bar-width);
-    flex-basis: var(--nyco-dimension-side-bar-width)
+    width: var(--nyco-dimension-sidebar-width);
+    max-width: var(--nyco-dimension-sidebar-width);
+    flex-basis: var(--nyco-dimension-sidebar-width)
   }
 
   > *:first-child + *,
   > .layout__column:first-child + .layout__column {
-    width: calc(100% - #{var(--nyco-dimension-side-bar-width)});
-    max-width: calc(100% - #{var(--nyco-dimension-side-bar-width)});
-    flex-basis: calc(100% - #{var(--nyco-dimension-side-bar-width)})
+    width: calc(100% - #{var(--nyco-dimension-sidebar-width)});
+    max-width: calc(100% - #{var(--nyco-dimension-sidebar-width)});
+    flex-basis: calc(100% - #{var(--nyco-dimension-sidebar-width)})
   }
 }
 
@@ -220,21 +226,22 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 }
 
 @mixin sidebar-small() {
+  width: 100%;
   display: flex;
   align-items: stretch;
 
   > *:first-child,
   > .layout__column:first-child {
-    width: var(--nyco-dimension-side-bar-width-small);
-    max-width: var(--nyco-dimension-side-bar-width-small);
-    flex-basis: var(--nyco-dimension-side-bar-width-small)
+    width: var(--nyco-dimension-sidebar-width-small);
+    max-width: var(--nyco-dimension-sidebar-width-small);
+    flex-basis: var(--nyco-dimension-sidebar-width-small)
   }
 
   > *:first-child + *,
   > .layout__column:first-child + .layout__column {
-    width: calc(100% - #{var(--nyco-dimension-side-bar-width-small)});
-    max-width: calc(100% - #{var(--nyco-dimension-side-bar-width-small)});
-    flex-basis: calc(100% - #{var(--nyco-dimension-side-bar-width-small)})
+    width: calc(100% - #{var(--nyco-dimension-sidebar-width-small)});
+    max-width: calc(100% - #{var(--nyco-dimension-sidebar-width-small)});
+    flex-basis: calc(100% - #{var(--nyco-dimension-sidebar-width-small)})
   }
 }
 
@@ -245,22 +252,23 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 }
 
 @mixin sidebar-gutter() {
+  width: 100%;
   display: flex;
   align-items: stretch;
 
   > *:first-child,
   > .layout__column:first-child {
-    width: var(--nyco-dimension-side-bar-width);
-    max-width: var(--nyco-dimension-side-bar-width);
-    flex-basis: var(--nyco-dimension-side-bar-width);
+    width: var(--nyco-dimension-sidebar-width);
+    max-width: var(--nyco-dimension-sidebar-width);
+    flex-basis: var(--nyco-dimension-sidebar-width);
     margin-inline-end: var(--nyco-spacing-DEFAULT);
   }
 
   > *:first-child + *,
   > .layout__column:first-child + .layout__column {
-    width: calc(100% - #{var(--nyco-dimension-side-bar-width)} - var(--nyco-spacing-DEFAULT));
-    max-width: calc(100% - #{var(--nyco-dimension-side-bar-width)} - var(--nyco-spacing-DEFAULT));
-    flex-basis: calc(100% - #{var(--nyco-dimension-side-bar-width)} - var(--nyco-spacing-DEFAULT))
+    width: calc(100% - #{var(--nyco-dimension-sidebar-width)} - var(--nyco-spacing-DEFAULT));
+    max-width: calc(100% - #{var(--nyco-dimension-sidebar-width)} - var(--nyco-spacing-DEFAULT));
+    flex-basis: calc(100% - #{var(--nyco-dimension-sidebar-width)} - var(--nyco-spacing-DEFAULT))
   }
 }
 
@@ -271,22 +279,23 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 }
 
 @mixin sidebar-small-gutter() {
+  width: 100%;
   display: flex;
   align-items: stretch;
 
   > *:first-child,
   > .layout__column:first-child {
-    width: var(--nyco-dimension-side-bar-width-small);
-    max-width: var(--nyco-dimension-side-bar-width-small);
-    flex-basis: var(--nyco-dimension-side-bar-width-small);
+    width: var(--nyco-dimension-sidebar-width-small);
+    max-width: var(--nyco-dimension-sidebar-width-small);
+    flex-basis: var(--nyco-dimension-sidebar-width-small);
     margin-inline-end: var(--nyco-spacing-DEFAULT);
   }
 
   > *:first-child + *,
   > .layout__column:first-child + .layout__column {
-    width: calc(100% - #{var(--nyco-dimension-side-bar-width-small)} - var(--nyco-spacing-DEFAULT));
-    max-width: calc(100% - #{var(--nyco-dimension-side-bar-width-small)} - var(--nyco-spacing-DEFAULT));
-    flex-basis: calc(100% - #{var(--nyco-dimension-side-bar-width-small)} - var(--nyco-spacing-DEFAULT))
+    width: calc(100% - #{var(--nyco-dimension-sidebar-width-small)} - var(--nyco-spacing-DEFAULT));
+    max-width: calc(100% - #{var(--nyco-dimension-sidebar-width-small)} - var(--nyco-spacing-DEFAULT));
+    flex-basis: calc(100% - #{var(--nyco-dimension-sidebar-width-small)} - var(--nyco-spacing-DEFAULT))
   }
 }
 
@@ -297,6 +306,7 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 }
 
 @mixin content() {
+  width: 100%;
   align-items: center;
 
   > *:first-child,
@@ -315,6 +325,8 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 
 @mixin topbar-selector($variant: '') {
   .#{$variant}layout-topbar {
+    width: 100%;
+
     > *:first-child {
       height: var(--nyco-dimension-topbar-height)
     }
@@ -352,12 +364,13 @@ $layouts: map-get(tokens.$tokens, 'layouts');
 
 @mixin map {
   .layout-map {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
 
     @include media.screen-and-min-width('desktop') {
-      height: 90vh;
+      height: var(--nyco-dimension-map-container-height);
       flex-direction: row
     }
 
@@ -366,14 +379,14 @@ $layouts: map-get(tokens.$tokens, 'layouts');
       max-width: 100%;
 
       @include media.screen-and-min-width('desktop') {
-        height: 90vh;
+        height: var(--nyco-dimension-map-container-height);
         overflow: hidden;
         overflow-y: auto
       }
     }
 
     .layout-map__map {
-      height: 50vh;
+      height: var(--nyco-dimension-map-height);
       width: 100%;
       max-width: 100%;
 

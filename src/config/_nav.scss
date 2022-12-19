@@ -10,19 +10,6 @@
 @use 'config/dimensions';
 
 // Declarations
-@mixin icon {
-  svg {
-    text-decoration: none;
-    pointer-events: none;
-  }
-
-  .icon {
-    margin-inline-end: $grid;
-    vertical-align: middle;
-    margin-top: -2px
-  }
-}
-
 @mixin inline($variant: '', $childClass: 'nav__item') {
   list-style: none;
 
@@ -44,6 +31,10 @@
     }
   }
 
+  button, .btn {
+    width: initial;
+  }
+
   .active {
     font-weight: bold;
   }
@@ -59,8 +50,6 @@
     margin-right: 0;
     margin-left: 1em;
   }
-
-  @include icon;
 }
 
 @mixin block($variant: '') {
@@ -101,5 +90,5 @@
     margin-bottom: 0;
   }
 
-  @include icon;
+  // @include icon;
 }

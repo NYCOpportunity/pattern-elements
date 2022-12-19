@@ -1,0 +1,1 @@
+The Content Layout creates a container with a maximum width for the comfortable reading of long-form text. The content region maximum width is `{{ this.tokens.dimension.content-width }}`.

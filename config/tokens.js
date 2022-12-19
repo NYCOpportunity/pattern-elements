@@ -86,6 +86,7 @@ const color = {
   'brand': 'var(--nyco-brand)',
   'alt': 'var(--nyco-alt)',
   'em': 'var(--nyco-em)',
+  'error': 'var(--nyco-error)',
   'primary': 'var(--nyco-primary)',
   'secondary': 'var(--nyco-secondary)',
   'tertiary': 'var(--nyco-tertiary)',
@@ -454,6 +455,7 @@ module.exports = {
     'h6': 'normal',
     'p': '1.6',
     'small': 'normal',
+    'small': '1.4',
     'button': 'normal',
     'tables': '1.6',
     'option': 'normal',
@@ -507,6 +509,11 @@ module.exports = {
     'content-width': 'calc(var(--nyco-grid) * 112)',  // '896px',
     'site-max-width': 'calc(var(--nyco-grid) * 180)', // '1440px',
     'site-min-width': 'calc(var(--nyco-grid) * 40)',  // '320px',
+    'sidebar-width': '20rem',
+    'sidebar-width-small': '12rem',
+    'map-container-height': '90vh',
+    'map-height': '50vh',
+    'topbar-height': 'calc(var(--nyco-grid) * 11)',
     'scroll-peek-column-width': '88%'
   },
   'z': {
@@ -525,7 +532,7 @@ module.exports = {
   'animate': {
     'ease-in': 'cubic-bezier(0.755, 0.05, 0.855, 0.06)', // Quint
     'ease-out': 'cubic-bezier(0.23, 1, 0.32, 1)',        // Quint
-    'duration': '0.25s',
+    'duration': '1s',
     'timing-function': 'cubic-bezier(0.23, 1, 0.32, 1)'
   },
   'borderWidth': {

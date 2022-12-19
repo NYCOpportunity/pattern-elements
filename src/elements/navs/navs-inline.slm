@@ -1,14 +1,14 @@
 /
 / Nav Inline
 /
-nav class='nav-inline'
+nav class='nav-inline' aria-label='Inline Example'
   a href='#' Am I eligible?
 
   a href='#' Programs
 
   a href='#' Find help
 
-  a class='link-icon'
+  button class='link-icon'
     svg class='icon icon-ui'
       use href='#lucide-search'
 

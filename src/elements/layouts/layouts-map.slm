@@ -1,0 +1,8 @@
+div class='layout-map desktop:layout-sidebar bg-scale-2'
+  /! { The map side bar region will be ${this.tokens.dimension['sidebar-width-small']} wide for desktop viewports }
+  div class='layout-map__sidebar'
+    div class='wrap py-4 text-center'
+      p Map sidebar region
+
+  /! { The map will occupy the rest of the layout container }
+  iframe class='layout-map__map' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91597692395!2d-74.12010624516591!3d40.697403027022396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1671223069455!5m2!1sen!2sus' style='border: 0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'

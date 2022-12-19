@@ -1,7 +1,7 @@
 /
 / Nav Block
 /
-nav class='nav-block'
+nav class='nav-block' aria-label='Block Example'
   a href='#' Am I eligible?
 
   a href='#' Programs
@@ -9,7 +9,7 @@ nav class='nav-block'
   a href='#' Find help
 
   button class='link-icon'
-    svg class='icon icon-ui'
+    svg class='icon-ui' aria-hidden='true'
       use href='#lucide-search'
 
     span Search

@@ -1,5 +1,1 @@
-The Opportunity Standard provides a few basic layouts.
-
-uses a {{ this.tokens.grid }} grid system by default for dimensions and spacing between elements. The base value for the grid is stored in the `--nyco-grid` CSS custom property, and all spacing values are determined using the the `calc()` function with `--nyco-grid` and a multiplier.
-
-The default spacing value is `{{ this.tokens.spacing.DEFAULT }}`.
+Layouts in the {{ this.package.nice }} are based on the {{ this.tokens.grid }} grid system. This means all dimensions and spacing between elements are determined by multiplying the value of {{ this.tokens.grid }}. The base value is stored in the `--nyco-grid` CSS custom property then other custom properties use the `calc()` CSS function to multiply it. There are also some [layout utilities](#layout-utilities) as well as a few basic predefined layouts.

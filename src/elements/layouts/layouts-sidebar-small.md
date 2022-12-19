@@ -1,0 +1,1 @@
+The **Small Sidebar Layout** creates a smaller sidebar with a maximum width of `{{ this.tokens.dimension.sidebar-width-small }}`.
