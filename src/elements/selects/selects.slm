@@ -4,7 +4,7 @@
 - this.select = {}
 - this.select.id = this.createId()
 - this.select.tabindex = false
-- this.select.required = 'true'
+- this.select.required = false
 - this.select.default = {label: 'Select an option', selected: true, value: ''}
 - this.select.js = false
 - this.select.ariaControls = false

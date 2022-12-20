@@ -138,7 +138,8 @@
 
   > [class*='icon'] {
     @include media.screens-and-prefers-motion {
-      transition: transform var(--nyco-animate-duration)
+      transition: transform var(--nyco-animate-duration);
+      transition-timing-function: var(--nyco-animate-timing-function);
     }
   }
 
