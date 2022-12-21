@@ -61,6 +61,7 @@
   background-color: transparent;
 
   border: get('border-width') get('border-style') currentColor;
+  border-color: get('border-color');
   border-radius: get('radius');
 
   display: inline-flex;

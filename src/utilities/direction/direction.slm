@@ -1,0 +1,5 @@
+svg class='icon-ui ltr:flip'
+  use href='#lucide-external-link'
+
+svg class='icon-ui rtl:flip'
+  use href='#lucide-external-link'

@@ -9,5 +9,5 @@
 - if (typeof spinner !== 'undefined')
   - this.spinner = Object.assign(this.spinner, spinner);
 
-svg class='spinner icon-4 text-tertiary' viewBox='0 0 24 24' xmlns:xlink='http://www.w3.org/1999/xlink' tabindex=this.spinner.tabindex
+svg class='spinner icon-4 text-tertiary mie-1' viewBox='0 0 24 24' xmlns:xlink='http://www.w3.org/1999/xlink' tabindex=this.spinner.tabindex
   circle class='spinner__path' cx='12' cy='12' r='10' fill='none'

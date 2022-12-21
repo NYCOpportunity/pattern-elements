@@ -10,4 +10,4 @@ Per <a href="https://blueprint.cityofnewyork.us/content/plain-language-and-reada
 
 ---
 
-Further Tag guidance can be found on the <a href="https://designsystem.digital.gov/components/tag/" target="_blank" rel="noopener nofollow">(USWDS) site</a>.
+Further Tag guidance can be found on the <a href="https://designsystem.digital.gov/components/tag/" target="_blank" rel="noopener nofollow"><abbr title="The U.S. Web Design System">USWDS</abbr> site</a>.

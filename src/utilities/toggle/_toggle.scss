@@ -100,7 +100,7 @@
     @include media.screens-and-prefers-motion {
       transition-property: max-height;
       transition-duration: 0.5s;
-      transition-timing-function: animate.get('ease-out-quint');
+      @include animate.ease();
     }
   }
 

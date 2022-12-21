@@ -176,6 +176,7 @@ const dark = {
   },
 
   'button': {
+    'border-color': 'var(--nyco-scale-3)',
     'primary': {
       'text': 'var(--nyco-color-blue-l-2)',
       'text-hover': 'var(--nyco-color-blue-l-3)',
@@ -314,6 +315,7 @@ const light = merge(dark, {
   },
 
   'button': {
+    'border-color': 'currentColor',
     'primary': {
       'text': 'var(--nyco-scale-0)',
       'text-hover': 'var(--nyco-scale-0)',

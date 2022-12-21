@@ -1,0 +1,1 @@
+The **Spinner** is a generic animation used to indicate a long process is taking place. It must appear during processing times so that the user is aware that their input was received and that the system is working to generate a response.

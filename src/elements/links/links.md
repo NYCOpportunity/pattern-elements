@@ -1,4 +1,4 @@
-Guidance on links can be found on the <a href="https://designsystem.digital.gov/components/link/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) site</a>. Links within the Opportunity Standard emphasize the following guidelines from the USWDS;
+Guidance on links can be found on the <a href="https://designsystem.digital.gov/components/link/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) site</a>. Links within the Opportunity Standard emphasize the following guidelines from the <abbr title="The U.S. Web Design System">USWDS</abbr>;
 
 ---
 
