@@ -1,11 +1,11 @@
 div class='grid gap-3'
-  - input = {prefix: '#lucide-dollar-sign', type: 'number'}
+  - input = {prefix: '#lucide-dollar-sign', type: 'text', mode: 'decimal', js: 'dollars', align: 'text-end', placeholder: '0.00'}
   = partial('inputs.slm')
 
   - input = {suffix: '#lucide-search', type: 'search'}
   = partial('inputs.slm')
 
-  - input = {prefix: '+1', type: 'tel'}
+  - input = {prefix: '+1', type: 'tel', js: 'tel', mode: 'tel', pattern: '([0-9]{3}) [0-9]{3}-[0-9]{4}'}
   = partial('inputs.slm')
 
   - input = {prefix: 'CL-', type: 'tel'}

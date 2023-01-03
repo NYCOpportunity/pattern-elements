@@ -20,6 +20,19 @@ input[type='number'] {
   }
 }
 
+input[type='date'] {
+  flex-direction: row-reverse;
+  gap: var(--nyco-grid);
+
+  &::-webkit-datetime-edit {
+    padding: 0;
+  }
+}
+
+input::-webkit-datetime-edit {
+  display: block;
+}
+
 .input, [class*='input-'], .textarea {
   color: var(--nyco-input-text);
   background: var(--nyco-input-background);

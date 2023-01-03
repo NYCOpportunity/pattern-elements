@@ -11,6 +11,10 @@
 - this.input.pattern = false
 - this.input.placeholder = false
 - this.input.js = false
+- this.input.align = false
+- this.input.value = false
+- this.input.mode = false
+- this.input.maxlength = false
 
 / Inherit overrides
 - if (typeof input !== 'undefined')
@@ -29,7 +33,7 @@ div class='${this.input.class}'
   /! { @required  "true" specifies wether a value for the input is required }
   /! { @pattern   A regular expression the input's value must match in order to validate }
   /! { @tabindex  Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
-  input data-js=this.input.js type='${this.input.type}' class='${this.input.class}' id='${this.input.id}' name='${this.input.name}' required=this.input.required pattern=this.input.pattern tabindex=this.input.tabindex placeholder=this.input.placeholder
+  input data-js=this.input.js type='${this.input.type}' class=this.input.align id='${this.input.id}' name='${this.input.name}' required=this.input.required pattern=this.input.pattern tabindex=this.input.tabindex placeholder=this.input.placeholder value=this.input.value inputmode=this.input.mode maxlength=this.input.maxlength
 
   - if this.input.prefix
     - if this.input.prefix.includes('#')

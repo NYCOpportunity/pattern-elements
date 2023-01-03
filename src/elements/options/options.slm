@@ -22,7 +22,7 @@ label class='option ${this.option.class}' tabindex=this.option.tabindex for='${t
   input data-js=this.option.js tabindex=this.option.tabindex type='${this.option.type}' id='${this.option.id}' value='${this.option.value}' name='${this.option.name}' required='${this.option.required}'
 
   span class='option__base'
-    svg class='option__graphic' aria-hidden='true'
+    svg class='option__graphic' aria-hidden='true' tabindex=this.option.tabindex
       use href='#option-nyco-${this.option.type}'
 
     span class='option__label'

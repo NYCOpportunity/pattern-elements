@@ -570,7 +570,7 @@ module.exports = {
     'width': '4px'
   },
   'button': {
-    'inner-size': '1rem',
+    'inner-size': '1.1rem',
     'radius': '5px',
     'radius-tag': '50px',
     'border-style': 'solid',
@@ -578,7 +578,7 @@ module.exports = {
     'variants': ['primary', 'secondary', 'tertiary']
   },
   'input': {
-    'inner-size': '1rem',
+    'inner-size': '1.1rem',
     'radius': '0px',
     'border-style': 'solid',
     'border-width': '2px',
@@ -588,7 +588,7 @@ module.exports = {
     'search-icon': [spacing['3'], spacing['3']]
   },
   'select': {
-    'inner-size': '1rem',
+    'inner-size': '1.1rem',
     'radius': '5px',
     'border-style': 'solid',
     'border-width': '2px',
@@ -597,7 +597,7 @@ module.exports = {
     'stroke-line': 'round'
   },
   'option': {
-    'inner-size': '1rem',
+    'inner-size': '1.1rem',
     'radius': '5px',
     'border-style': 'solid',
     'border-width': '2px',

@@ -29,7 +29,7 @@
 @mixin transition() {
   @include media.screens-and-prefers-motion {
     transition-property: background, color, border, box-shadow, transform, stroke, stroke-dashoffset, fill;
-    transition-duration: var(--nyco-animate-duration);
+    transition-duration: calc(var(--nyco-animate-duration) / 2);
     transition-timing-function: var(--nyco-animate-timing-function);
     backface-visibility: hidden;
   }
