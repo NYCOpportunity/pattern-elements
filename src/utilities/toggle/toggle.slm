@@ -1,3 +1,10 @@
-button data-js='toggle' aria-controls='toggle-target' aria-expanded='true' type='button' class='btn btn-primary mb-3' Toggle
 
-div#toggle-target aria-hidden='false' class='bg-blue-light p-4 text-center active' Targeted toggle element
+div class='layout-content'
+  div class='wrap grid gap-3'
+    button data-js='toggle' aria-controls='toggle-target' aria-expanded='true' type='button' class='btn' Click to toggle the target element
+
+    div#toggle-target aria-hidden='false' class='bg-scale-2 p-4 text-center active'
+      p
+        | This region is the target element.&nbsp;
+        a href='#' This link is a potentially focusable element
+        | .

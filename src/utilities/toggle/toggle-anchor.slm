@@ -1,3 +1,5 @@
-a data-js='toggle' href='#anchor-target' class='inline-block mb-3' Toggle and Jump to Target
+div class='layout-content'
+  div class='wrap grid gap-3'
+    a data-js='toggle' href='#anchor-target' Toggle and jump to target.
 
-section#anchor-target aria-hidden='true' class='bg-blue-light p-4 hidden text-center' Targeted toggle element
+    p#anchor-target aria-hidden='true' class='hidden' This element is the anchor target.

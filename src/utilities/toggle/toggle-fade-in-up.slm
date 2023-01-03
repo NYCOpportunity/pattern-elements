@@ -1,3 +1,5 @@
-button type='button' data-js='toggle' class='btn btn-primary mb-3' aria-expanded='false' aria-controls='toggle-target-fade-in-up' Fade In Up
+div class='layout-content'
+  div class='wrap grid gap-3'
+    button type='button' data-js='toggle' class='btn' aria-expanded='false' aria-controls='toggle-target-fade-in-up' Click to toggle the target element
 
-div#toggle-target-fade-in-up aria-hidden='true' class='bg-blue-light p-4 text-center hidden hidden:fadeInUp animated' Targeted toggle element
+    div#toggle-target-fade-in-up aria-hidden='true' class='bg-scale-2 p-4 text-center hidden hidden:fadeInUp animated' This region is the target element.

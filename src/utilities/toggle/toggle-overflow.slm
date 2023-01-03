@@ -1,4 +1,6 @@
-button type='button' data-js='toggle' class='btn btn-primary mb-3' aria-expanded='false' aria-controls='toggle-target-overflow' Overflow
+div class='layout-content'
+  div class='wrap grid gap-3'
+    button type='button' data-js='toggle' class='btn' aria-expanded='false' aria-controls='toggle-target-overflow' Click to toggle the target element
 
-div#toggle-target-overflow aria-hidden='true' class='bg-blue-light w-full text-center hidden hidden:overflow animated'
-  div class='p-4' Targeted toggle element
+    div#toggle-target-overflow aria-hidden='true' class='bg-scale-2 text-center hidden hidden:overflow animated'
+      div class='p-4' This region is the target element.
