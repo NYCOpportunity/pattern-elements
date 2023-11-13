@@ -464,7 +464,7 @@ module.exports = {
     'code': '1.9'
   },
   'textDecoration': {
-    'link': 'underline'
+    'link': 'none'
   },
   'typography': {
     'small': '16px',
