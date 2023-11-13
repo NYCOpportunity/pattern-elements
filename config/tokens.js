@@ -351,7 +351,7 @@ module.exports = {
   'stringKeys': 'stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code',
   'version': package.version,
   'cdn': `"https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v${package.version}/dist/"`,
-  'googleFonts': '"https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"',
+  'googleFonts': '"https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap"',
   'language': [
     'default',
     'ar',
