@@ -77,7 +77,8 @@ $modes: map-get(tokens.$tokens, 'color-modes');
       color: map-get($colors, $token-hyperlinks-hover);
     }
 
-    &:visited:not([href^='#']):not(.o-text-controller__languages a) {
+    // Header links don't change color when visited, other links do
+    &:visited:not([href^='#']):not(.o-text-controller__languages a):not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) {
       color: map-get($colors, $token-hyperlinks-visited);
     }
   }
