@@ -418,7 +418,7 @@ module.exports = {
     'blockquote': 'normal',
     'h4': 'normal',
     'h5': 'normal',
-    'h6': 'italic',
+    'h6': 'normal',
     'p': 'normal',
     'link': 'normal',
     'small': 'normal',
