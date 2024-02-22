@@ -37,7 +37,7 @@ $tokens:(
     blockquote: normal,
     h4: bold,
     h5: bold,
-    h6: medium,
+    h6: 500,
     p: normal,
     link: bold,
     small: normal,
@@ -45,7 +45,7 @@ $tokens:(
     tables: normal,
     normal: normal,
     bold: 800,
-    semibold: 700,
+    semibold: 600,
     option: bold,
     question: normal,
     code: normal
