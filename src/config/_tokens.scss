@@ -37,7 +37,7 @@ $tokens:(
     blockquote: normal,
     h4: bold,
     h5: bold,
-    h6: normal,
+    h6: medium,
     p: normal,
     link: bold,
     small: normal,
@@ -45,6 +45,7 @@ $tokens:(
     tables: normal,
     normal: normal,
     bold: 800,
+    semibold: 700,
     option: bold,
     question: normal,
     code: normal
@@ -155,7 +156,7 @@ $tokens:(
     white: #FFFFFF,
     transparent: rgba(255, 255, 255, 0),
     inherit: inherit,
-    text: var(--nyco-text),
+    text: #080707,
     brand: var(--nyco-brand),
     alt: var(--nyco-alt),
     em: var(--nyco-em),
@@ -287,7 +288,7 @@ $tokens:(
       )
     ),
     default: (
-      text: var(--nyco-color-default-3),
+      text: #080707,
       brand: var(--nyco-color-blue),
       alt: var(--nyco-text),
       em: var(--nyco-color-yellow-d-4),
