@@ -247,7 +247,7 @@ const light = merge(dark, {
     '4': 'var(--nyco-color-light-4)'
   },
 
-  'text': 'var(--nyco-color-default-3)',
+  'text': '#080707',
   'brand': 'var(--nyco-color-blue)',
   'alt': 'var(--nyco-text)',
   'em': 'var(--nyco-color-yellow-d-4)',
@@ -398,7 +398,7 @@ module.exports = {
     'blockquote': 'normal',
     'h4': 'bold',
     'h5': 'bold',
-    'h6': 'medium',
+    'h6': '500',
     'p': 'normal',
     'link': 'bold',
     'small': 'normal',
@@ -409,7 +409,7 @@ module.exports = {
     'option': 'bold',
     'question': 'normal',
     'code': 'normal',
-    'semibold': '700'
+    'semibold': '600'
   },
   'fontStyle': {
     'body': 'normal',
