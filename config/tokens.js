@@ -81,7 +81,7 @@ const color = {
   'transparent': 'rgba(255, 255, 255, 0)',
   'inherit': 'inherit',
 
-  'text': 'var(--nyco-text)',
+  'text': '#080707',
   'background': 'var(--nyco-background)',
   'brand': 'var(--nyco-brand)',
   'alt': 'var(--nyco-alt)',
