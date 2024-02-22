@@ -351,7 +351,7 @@ module.exports = {
   'stringKeys': 'stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code',
   'version': package.version,
   'cdn': `"https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v${package.version}/dist/"`,
-  'googleFonts': '"https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap"',
+  'googleFonts': '"https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"',
   'language': [
     'default',
     'ar',
@@ -398,7 +398,7 @@ module.exports = {
     'blockquote': 'normal',
     'h4': 'bold',
     'h5': 'bold',
-    'h6': 'normal',
+    'h6': 'medium',
     'p': 'normal',
     'link': 'bold',
     'small': 'normal',
@@ -408,7 +408,8 @@ module.exports = {
     'bold': '800',
     'option': 'bold',
     'question': 'normal',
-    'code': 'normal'
+    'code': 'normal',
+    'semibold': '700'
   },
   'fontStyle': {
     'body': 'normal',
