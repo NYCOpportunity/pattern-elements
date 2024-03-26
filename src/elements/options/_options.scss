@@ -33,7 +33,7 @@
   @include options.graphic()
 }
 
-input:focus + .option__base {
+input:focus-visible + .option__base {
   @include options.focused()
 }
 

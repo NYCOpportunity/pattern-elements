@@ -20,7 +20,7 @@
 @mixin focus() {
   @include blurred();
 
-  &:focus {
+  &:focus-visible {
     @include focused()
   }
 }

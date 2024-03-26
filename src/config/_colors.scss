@@ -133,13 +133,13 @@ $base-white: map-get($colors, 'base-white');
                 0 0 0 4px rgba(255, 255, 255, 0);
   }
 
-  .input > input:focus,
-  .select > select:focus {
+  .input > input:focus-visible,
+  .select > select:focus-visible {
     border-color: var(--nyco-focus);
     box-shadow: 0 0 0 2px var(--nyco-focus);
   }
 
-  .btn:focus, button:focus, a:focus {
+  .btn:focus-visible, button:focus-visible, a:focus-visible {
     outline: none;
     box-shadow: 0 0 0 1.25px var(--nyco-background-color),
                 0 0 0 4px var(--nyco-focus);
