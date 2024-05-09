@@ -23,8 +23,6 @@
   border: var(--nyco-input-border-width) var(--nyco-input-border-style);
   border-color: inherit;
   border-radius: var(--nyco-input-radius);
-
-  @include interaction.focus();
 }
 
 @mixin graphic() {
