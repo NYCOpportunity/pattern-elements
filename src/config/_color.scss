@@ -187,12 +187,6 @@ $modes: map-get(tokens.$tokens, 'color-modes');
     background-color: map-get($colors, $token-background-hover)
   }
 
-  input:focus-visible + .option__base {
-    color: map-get($colors, $token-text-focus);
-    border-color: map-get($colors, $token-border-focus);
-    background-color: map-get($colors, $token-background-focus)
-  }
-
   input:checked + .option__base {
     color: map-get($colors, $token-text-checked);
     background-color: map-get($colors, $token-background-checked);

@@ -33,10 +33,6 @@
   @include options.graphic()
 }
 
-input:focus-visible + .option__base {
-  @include options.focused()
-}
-
 input:checked + .option__base {
   @include options.checked();
 
